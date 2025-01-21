@@ -6,7 +6,7 @@
 [0.600s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
 [0.600s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
 [0.600s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
-[0.600s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/kevin/INF3995-102/robot'
+[0.600s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/kylor/INF3995-102/robot'
 [0.600s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
 [0.600s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
 [0.600s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
@@ -107,7 +107,7 @@
 [0.661s] Level 5:colcon.colcon_core.verb:set package 'ros_gz_example_application' build argument 'ament_cmake_args' from command line to 'None'
 [0.661s] Level 5:colcon.colcon_core.verb:set package 'ros_gz_example_application' build argument 'catkin_cmake_args' from command line to 'None'
 [0.661s] Level 5:colcon.colcon_core.verb:set package 'ros_gz_example_application' build argument 'catkin_skip_building_tests' from command line to 'False'
-[0.661s] DEBUG:colcon.colcon_core.verb:Building package 'ros_gz_example_application' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/kevin/INF3995-102/robot/build/ros_gz_example_application', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DBUILD_TESTING=ON'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/kevin/INF3995-102/robot/install/ros_gz_example_application', 'merge_install': False, 'path': '/home/kevin/INF3995-102/robot/src/ros_gz_example_application', 'symlink_install': False, 'test_result_base': None}
+[0.661s] DEBUG:colcon.colcon_core.verb:Building package 'ros_gz_example_application' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/kylor/INF3995-102/robot/build/ros_gz_example_application', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DBUILD_TESTING=ON'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/kylor/INF3995-102/robot/install/ros_gz_example_application', 'merge_install': False, 'path': '/home/kylor/INF3995-102/robot/src/ros_gz_example_application', 'symlink_install': False, 'test_result_base': None}
 [0.662s] Level 5:colcon.colcon_core.verb:set package 'ros_gz_example_description' build argument 'cmake_args' from command line to '['-DBUILD_TESTING=ON']'
 [0.662s] Level 5:colcon.colcon_core.verb:set package 'ros_gz_example_description' build argument 'cmake_target' from command line to 'None'
 [0.662s] Level 5:colcon.colcon_core.verb:set package 'ros_gz_example_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
@@ -117,7 +117,7 @@
 [0.662s] Level 5:colcon.colcon_core.verb:set package 'ros_gz_example_description' build argument 'ament_cmake_args' from command line to 'None'
 [0.662s] Level 5:colcon.colcon_core.verb:set package 'ros_gz_example_description' build argument 'catkin_cmake_args' from command line to 'None'
 [0.662s] Level 5:colcon.colcon_core.verb:set package 'ros_gz_example_description' build argument 'catkin_skip_building_tests' from command line to 'False'
-[0.662s] DEBUG:colcon.colcon_core.verb:Building package 'ros_gz_example_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/kevin/INF3995-102/robot/build/ros_gz_example_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DBUILD_TESTING=ON'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/kevin/INF3995-102/robot/install/ros_gz_example_description', 'merge_install': False, 'path': '/home/kevin/INF3995-102/robot/src/ros_gz_example_description', 'symlink_install': False, 'test_result_base': None}
+[0.662s] DEBUG:colcon.colcon_core.verb:Building package 'ros_gz_example_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/kylor/INF3995-102/robot/build/ros_gz_example_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DBUILD_TESTING=ON'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/kylor/INF3995-102/robot/install/ros_gz_example_description', 'merge_install': False, 'path': '/home/kylor/INF3995-102/robot/src/ros_gz_example_description', 'symlink_install': False, 'test_result_base': None}
 [0.663s] Level 5:colcon.colcon_core.verb:set package 'ros_gz_example_gazebo' build argument 'cmake_args' from command line to '['-DBUILD_TESTING=ON']'
 [0.663s] Level 5:colcon.colcon_core.verb:set package 'ros_gz_example_gazebo' build argument 'cmake_target' from command line to 'None'
 [0.663s] Level 5:colcon.colcon_core.verb:set package 'ros_gz_example_gazebo' build argument 'cmake_target_skip_unavailable' from command line to 'False'
@@ -127,7 +127,7 @@
 [0.663s] Level 5:colcon.colcon_core.verb:set package 'ros_gz_example_gazebo' build argument 'ament_cmake_args' from command line to 'None'
 [0.663s] Level 5:colcon.colcon_core.verb:set package 'ros_gz_example_gazebo' build argument 'catkin_cmake_args' from command line to 'None'
 [0.664s] Level 5:colcon.colcon_core.verb:set package 'ros_gz_example_gazebo' build argument 'catkin_skip_building_tests' from command line to 'False'
-[0.664s] DEBUG:colcon.colcon_core.verb:Building package 'ros_gz_example_gazebo' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/kevin/INF3995-102/robot/build/ros_gz_example_gazebo', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DBUILD_TESTING=ON'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/kevin/INF3995-102/robot/install/ros_gz_example_gazebo', 'merge_install': False, 'path': '/home/kevin/INF3995-102/robot/src/ros_gz_example_gazebo', 'symlink_install': False, 'test_result_base': None}
+[0.664s] DEBUG:colcon.colcon_core.verb:Building package 'ros_gz_example_gazebo' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/kylor/INF3995-102/robot/build/ros_gz_example_gazebo', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DBUILD_TESTING=ON'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/kylor/INF3995-102/robot/install/ros_gz_example_gazebo', 'merge_install': False, 'path': '/home/kylor/INF3995-102/robot/src/ros_gz_example_gazebo', 'symlink_install': False, 'test_result_base': None}
 [0.665s] Level 5:colcon.colcon_core.verb:set package 'ros_gz_example_bringup' build argument 'cmake_args' from command line to '['-DBUILD_TESTING=ON']'
 [0.665s] Level 5:colcon.colcon_core.verb:set package 'ros_gz_example_bringup' build argument 'cmake_target' from command line to 'None'
 [0.665s] Level 5:colcon.colcon_core.verb:set package 'ros_gz_example_bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
@@ -137,35 +137,35 @@
 [0.665s] Level 5:colcon.colcon_core.verb:set package 'ros_gz_example_bringup' build argument 'ament_cmake_args' from command line to 'None'
 [0.665s] Level 5:colcon.colcon_core.verb:set package 'ros_gz_example_bringup' build argument 'catkin_cmake_args' from command line to 'None'
 [0.665s] Level 5:colcon.colcon_core.verb:set package 'ros_gz_example_bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
-[0.665s] DEBUG:colcon.colcon_core.verb:Building package 'ros_gz_example_bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/kevin/INF3995-102/robot/build/ros_gz_example_bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DBUILD_TESTING=ON'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/kevin/INF3995-102/robot/install/ros_gz_example_bringup', 'merge_install': False, 'path': '/home/kevin/INF3995-102/robot/src/ros_gz_example_bringup', 'symlink_install': False, 'test_result_base': None}
+[0.665s] DEBUG:colcon.colcon_core.verb:Building package 'ros_gz_example_bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/kylor/INF3995-102/robot/build/ros_gz_example_bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DBUILD_TESTING=ON'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/kylor/INF3995-102/robot/install/ros_gz_example_bringup', 'merge_install': False, 'path': '/home/kylor/INF3995-102/robot/src/ros_gz_example_bringup', 'symlink_install': False, 'test_result_base': None}
 [0.665s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
 [0.667s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
-[0.667s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/kevin/INF3995-102/robot/src/ros_gz_example_description' with build type 'ament_cmake'
-[0.668s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/kevin/INF3995-102/robot/src/ros_gz_example_description'
+[0.667s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/kylor/INF3995-102/robot/src/ros_gz_example_description' with build type 'ament_cmake'
+[0.668s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/kylor/INF3995-102/robot/src/ros_gz_example_description'
 [0.671s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
 [0.671s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
 [0.672s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
-[0.680s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/kevin/INF3995-102/robot/src/ros_gz_example_application' with build type 'ament_cmake'
-[0.681s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/kevin/INF3995-102/robot/src/ros_gz_example_application'
+[0.680s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/kylor/INF3995-102/robot/src/ros_gz_example_application' with build type 'ament_cmake'
+[0.681s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/kylor/INF3995-102/robot/src/ros_gz_example_application'
 [0.681s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
 [0.681s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
-[0.695s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kevin/INF3995-102/robot/build/ros_gz_example_description': /usr/bin/cmake /home/kevin/INF3995-102/robot/src/ros_gz_example_description -DBUILD_TESTING=ON -DCMAKE_INSTALL_PREFIX=/home/kevin/INF3995-102/robot/install/ros_gz_example_description
-[0.700s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kevin/INF3995-102/robot/build/ros_gz_example_application': /usr/bin/cmake /home/kevin/INF3995-102/robot/src/ros_gz_example_application -DBUILD_TESTING=ON -DCMAKE_INSTALL_PREFIX=/home/kevin/INF3995-102/robot/install/ros_gz_example_application
-[1.309s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kevin/INF3995-102/robot/build/ros_gz_example_application' returned '1': /usr/bin/cmake /home/kevin/INF3995-102/robot/src/ros_gz_example_application -DBUILD_TESTING=ON -DCMAKE_INSTALL_PREFIX=/home/kevin/INF3995-102/robot/install/ros_gz_example_application
-[1.314s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kevin/INF3995-102/robot/build/ros_gz_example_description' returned '1': /usr/bin/cmake /home/kevin/INF3995-102/robot/src/ros_gz_example_description -DBUILD_TESTING=ON -DCMAKE_INSTALL_PREFIX=/home/kevin/INF3995-102/robot/install/ros_gz_example_description
+[0.695s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kylor/INF3995-102/robot/build/ros_gz_example_description': /usr/bin/cmake /home/kylor/INF3995-102/robot/src/ros_gz_example_description -DBUILD_TESTING=ON -DCMAKE_INSTALL_PREFIX=/home/kylor/INF3995-102/robot/install/ros_gz_example_description
+[0.700s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kylor/INF3995-102/robot/build/ros_gz_example_application': /usr/bin/cmake /home/kylor/INF3995-102/robot/src/ros_gz_example_application -DBUILD_TESTING=ON -DCMAKE_INSTALL_PREFIX=/home/kylor/INF3995-102/robot/install/ros_gz_example_application
+[1.309s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kylor/INF3995-102/robot/build/ros_gz_example_application' returned '1': /usr/bin/cmake /home/kylor/INF3995-102/robot/src/ros_gz_example_application -DBUILD_TESTING=ON -DCMAKE_INSTALL_PREFIX=/home/kylor/INF3995-102/robot/install/ros_gz_example_application
+[1.314s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kylor/INF3995-102/robot/build/ros_gz_example_description' returned '1': /usr/bin/cmake /home/kylor/INF3995-102/robot/src/ros_gz_example_description -DBUILD_TESTING=ON -DCMAKE_INSTALL_PREFIX=/home/kylor/INF3995-102/robot/install/ros_gz_example_description
 [1.323s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ros_gz_example_application)
-[1.326s] Level 1:colcon.colcon_core.environment:checking '/home/kevin/INF3995-102/robot/install/ros_gz_example_application' for CMake module files
-[1.327s] Level 1:colcon.colcon_core.environment:checking '/home/kevin/INF3995-102/robot/install/ros_gz_example_application' for CMake config files
-[1.327s] Level 1:colcon.colcon_core.environment:checking '/home/kevin/INF3995-102/robot/install/ros_gz_example_application/bin'
-[1.328s] Level 1:colcon.colcon_core.environment:checking '/home/kevin/INF3995-102/robot/install/ros_gz_example_application/lib/pkgconfig/ros_gz_example_application.pc'
-[1.329s] Level 1:colcon.colcon_core.environment:checking '/home/kevin/INF3995-102/robot/install/ros_gz_example_application/lib/python3.10/site-packages'
-[1.329s] Level 1:colcon.colcon_core.environment:checking '/home/kevin/INF3995-102/robot/install/ros_gz_example_application/bin'
-[1.330s] INFO:colcon.colcon_core.shell:Creating package script '/home/kevin/INF3995-102/robot/install/ros_gz_example_application/share/ros_gz_example_application/package.ps1'
-[1.331s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kevin/INF3995-102/robot/install/ros_gz_example_application/share/ros_gz_example_application/package.dsv'
-[1.332s] INFO:colcon.colcon_core.shell:Creating package script '/home/kevin/INF3995-102/robot/install/ros_gz_example_application/share/ros_gz_example_application/package.sh'
-[1.333s] INFO:colcon.colcon_core.shell:Creating package script '/home/kevin/INF3995-102/robot/install/ros_gz_example_application/share/ros_gz_example_application/package.bash'
-[1.336s] INFO:colcon.colcon_core.shell:Creating package script '/home/kevin/INF3995-102/robot/install/ros_gz_example_application/share/ros_gz_example_application/package.zsh'
-[1.338s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kevin/INF3995-102/robot/install/ros_gz_example_application/share/colcon-core/packages/ros_gz_example_application)
+[1.326s] Level 1:colcon.colcon_core.environment:checking '/home/kylor/INF3995-102/robot/install/ros_gz_example_application' for CMake module files
+[1.327s] Level 1:colcon.colcon_core.environment:checking '/home/kylor/INF3995-102/robot/install/ros_gz_example_application' for CMake config files
+[1.327s] Level 1:colcon.colcon_core.environment:checking '/home/kylor/INF3995-102/robot/install/ros_gz_example_application/bin'
+[1.328s] Level 1:colcon.colcon_core.environment:checking '/home/kylor/INF3995-102/robot/install/ros_gz_example_application/lib/pkgconfig/ros_gz_example_application.pc'
+[1.329s] Level 1:colcon.colcon_core.environment:checking '/home/kylor/INF3995-102/robot/install/ros_gz_example_application/lib/python3.10/site-packages'
+[1.329s] Level 1:colcon.colcon_core.environment:checking '/home/kylor/INF3995-102/robot/install/ros_gz_example_application/bin'
+[1.330s] INFO:colcon.colcon_core.shell:Creating package script '/home/kylor/INF3995-102/robot/install/ros_gz_example_application/share/ros_gz_example_application/package.ps1'
+[1.331s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kylor/INF3995-102/robot/install/ros_gz_example_application/share/ros_gz_example_application/package.dsv'
+[1.332s] INFO:colcon.colcon_core.shell:Creating package script '/home/kylor/INF3995-102/robot/install/ros_gz_example_application/share/ros_gz_example_application/package.sh'
+[1.333s] INFO:colcon.colcon_core.shell:Creating package script '/home/kylor/INF3995-102/robot/install/ros_gz_example_application/share/ros_gz_example_application/package.bash'
+[1.336s] INFO:colcon.colcon_core.shell:Creating package script '/home/kylor/INF3995-102/robot/install/ros_gz_example_application/share/ros_gz_example_application/package.zsh'
+[1.338s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kylor/INF3995-102/robot/install/ros_gz_example_application/share/colcon-core/packages/ros_gz_example_application)
 [1.350s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
 [1.351s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
 [1.351s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '1'
@@ -176,13 +176,13 @@
 [1.459s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
 [1.460s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.FileNotFound: Failed to connect to socket /run/user/1000/bus: No such file or directory
 [1.460s] DEBUG:colcon.colcon_core.event_reactor:joined thread
-[1.460s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/kevin/INF3995-102/robot/install/local_setup.ps1'
-[1.463s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/kevin/INF3995-102/robot/install/_local_setup_util_ps1.py'
-[1.466s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/kevin/INF3995-102/robot/install/setup.ps1'
-[1.467s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/kevin/INF3995-102/robot/install/local_setup.sh'
-[1.470s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/kevin/INF3995-102/robot/install/_local_setup_util_sh.py'
-[1.472s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/kevin/INF3995-102/robot/install/setup.sh'
-[1.474s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/kevin/INF3995-102/robot/install/local_setup.bash'
-[1.475s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/kevin/INF3995-102/robot/install/setup.bash'
-[1.476s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/kevin/INF3995-102/robot/install/local_setup.zsh'
-[1.477s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/kevin/INF3995-102/robot/install/setup.zsh'
+[1.460s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/kylor/INF3995-102/robot/install/local_setup.ps1'
+[1.463s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/kylor/INF3995-102/robot/install/_local_setup_util_ps1.py'
+[1.466s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/kylor/INF3995-102/robot/install/setup.ps1'
+[1.467s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/kylor/INF3995-102/robot/install/local_setup.sh'
+[1.470s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/kylor/INF3995-102/robot/install/_local_setup_util_sh.py'
+[1.472s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/kylor/INF3995-102/robot/install/setup.sh'
+[1.474s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/kylor/INF3995-102/robot/install/local_setup.bash'
+[1.475s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/kylor/INF3995-102/robot/install/setup.bash'
+[1.476s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/kylor/INF3995-102/robot/install/local_setup.zsh'
+[1.477s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/kylor/INF3995-102/robot/install/setup.zsh'

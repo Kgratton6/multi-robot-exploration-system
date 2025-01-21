@@ -1,4 +1,4 @@
-[0.018s] Invoking command in '/home/kevin/INF3995-102/robot/build/ros_gz_example_application': /usr/bin/cmake /home/kevin/INF3995-102/robot/src/ros_gz_example_application -DBUILD_TESTING=ON -DCMAKE_INSTALL_PREFIX=/home/kevin/INF3995-102/robot/install/ros_gz_example_application
+[0.018s] Invoking command in '/home/kylor/INF3995-102/robot/build/ros_gz_example_application': /usr/bin/cmake /home/kylor/INF3995-102/robot/src/ros_gz_example_application -DBUILD_TESTING=ON -DCMAKE_INSTALL_PREFIX=/home/kylor/INF3995-102/robot/install/ros_gz_example_application
 [0.618s] [31mCMake Error at CMakeLists.txt:5 (find_package):
 [0.618s]   By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project
 [0.618s]   has asked CMake to find a package configuration file provided by
@@ -17,5 +17,5 @@
 [0.620s] 
 [0.620s] [0m
 [0.620s] -- Configuring incomplete, errors occurred!
-[0.620s] See also "/home/kevin/INF3995-102/robot/build/ros_gz_example_application/CMakeFiles/CMakeOutput.log".
-[0.628s] Invoked command in '/home/kevin/INF3995-102/robot/build/ros_gz_example_application' returned '1': /usr/bin/cmake /home/kevin/INF3995-102/robot/src/ros_gz_example_application -DBUILD_TESTING=ON -DCMAKE_INSTALL_PREFIX=/home/kevin/INF3995-102/robot/install/ros_gz_example_application
+[0.620s] See also "/home/kylor/INF3995-102/robot/build/ros_gz_example_application/CMakeFiles/CMakeOutput.log".
+[0.628s] Invoked command in '/home/kylor/INF3995-102/robot/build/ros_gz_example_application' returned '1': /usr/bin/cmake /home/kylor/INF3995-102/robot/src/ros_gz_example_application -DBUILD_TESTING=ON -DCMAKE_INSTALL_PREFIX=/home/kylor/INF3995-102/robot/install/ros_gz_example_application

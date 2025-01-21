@@ -1,4 +1,4 @@
-[0.018s] Invoking command in '/home/kevin/setup/INF3995-Templates/project_ws/src/build/ros_gz_example_application': /usr/bin/cmake /home/kevin/setup/INF3995-Templates/project_ws/src/ros_gz_example_application -DBUILD_TESTING=ON -DCMAKE_INSTALL_PREFIX=/home/kevin/setup/INF3995-Templates/project_ws/src/install/ros_gz_example_application
+[0.018s] Invoking command in '/home/kylor/setup/INF3995-Templates/project_ws/src/build/ros_gz_example_application': /usr/bin/cmake /home/kylor/setup/INF3995-Templates/project_ws/src/ros_gz_example_application -DBUILD_TESTING=ON -DCMAKE_INSTALL_PREFIX=/home/kylor/setup/INF3995-Templates/project_ws/src/install/ros_gz_example_application
 [0.174s] -- The C compiler identification is GNU 11.4.0
 [0.656s] -- The CXX compiler identification is GNU 11.4.0
 [0.943s] -- Detecting C compiler ABI info
@@ -29,5 +29,5 @@
 [1.845s] 
 [1.845s] [0m
 [1.845s] -- Configuring incomplete, errors occurred!
-[1.845s] See also "/home/kevin/setup/INF3995-Templates/project_ws/src/build/ros_gz_example_application/CMakeFiles/CMakeOutput.log".
-[1.849s] Invoked command in '/home/kevin/setup/INF3995-Templates/project_ws/src/build/ros_gz_example_application' returned '1': /usr/bin/cmake /home/kevin/setup/INF3995-Templates/project_ws/src/ros_gz_example_application -DBUILD_TESTING=ON -DCMAKE_INSTALL_PREFIX=/home/kevin/setup/INF3995-Templates/project_ws/src/install/ros_gz_example_application
+[1.845s] See also "/home/kylor/setup/INF3995-Templates/project_ws/src/build/ros_gz_example_application/CMakeFiles/CMakeOutput.log".
+[1.849s] Invoked command in '/home/kylor/setup/INF3995-Templates/project_ws/src/build/ros_gz_example_application' returned '1': /usr/bin/cmake /home/kylor/setup/INF3995-Templates/project_ws/src/ros_gz_example_application -DBUILD_TESTING=ON -DCMAKE_INSTALL_PREFIX=/home/kylor/setup/INF3995-Templates/project_ws/src/install/ros_gz_example_application

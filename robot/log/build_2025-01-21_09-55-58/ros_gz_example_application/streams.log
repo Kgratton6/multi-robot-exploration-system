@@ -1,4 +1,4 @@
-[0.019s] Invoking command in '/home/kevin/INF3995-102/robot/build/ros_gz_example_application': /usr/bin/cmake /home/kevin/INF3995-102/robot/src/ros_gz_example_application -DCMAKE_INSTALL_PREFIX=/home/kevin/INF3995-102/robot/install/ros_gz_example_application
+[0.019s] Invoking command in '/home/kylor/INF3995-102/robot/build/ros_gz_example_application': /usr/bin/cmake /home/kylor/INF3995-102/robot/src/ros_gz_example_application -DCMAKE_INSTALL_PREFIX=/home/kylor/INF3995-102/robot/install/ros_gz_example_application
 [0.168s] -- The C compiler identification is GNU 11.4.0
 [0.679s] -- The CXX compiler identification is GNU 11.4.0
 [1.021s] -- Detecting C compiler ABI info
@@ -29,5 +29,5 @@
 [2.002s] 
 [2.002s] [0m
 [2.004s] -- Configuring incomplete, errors occurred!
-[2.004s] See also "/home/kevin/INF3995-102/robot/build/ros_gz_example_application/CMakeFiles/CMakeOutput.log".
-[2.007s] Invoked command in '/home/kevin/INF3995-102/robot/build/ros_gz_example_application' returned '1': /usr/bin/cmake /home/kevin/INF3995-102/robot/src/ros_gz_example_application -DCMAKE_INSTALL_PREFIX=/home/kevin/INF3995-102/robot/install/ros_gz_example_application
+[2.004s] See also "/home/kylor/INF3995-102/robot/build/ros_gz_example_application/CMakeFiles/CMakeOutput.log".
+[2.007s] Invoked command in '/home/kylor/INF3995-102/robot/build/ros_gz_example_application' returned '1': /usr/bin/cmake /home/kylor/INF3995-102/robot/src/ros_gz_example_application -DCMAKE_INSTALL_PREFIX=/home/kylor/INF3995-102/robot/install/ros_gz_example_application

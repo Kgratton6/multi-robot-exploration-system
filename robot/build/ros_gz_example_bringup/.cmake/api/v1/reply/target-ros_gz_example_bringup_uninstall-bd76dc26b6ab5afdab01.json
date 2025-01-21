@@ -98,13 +98,13 @@
 		{
 			"backtrace" : 9,
 			"isGenerated" : true,
-			"path" : "/home/kevin/INF3995-102/robot/build/ros_gz_example_bringup/CMakeFiles/ros_gz_example_bringup_uninstall",
+			"path" : "/home/kylor/INF3995-102/robot/build/ros_gz_example_bringup/CMakeFiles/ros_gz_example_bringup_uninstall",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "/home/kevin/INF3995-102/robot/build/ros_gz_example_bringup/CMakeFiles/ros_gz_example_bringup_uninstall.rule",
+			"path" : "/home/kylor/INF3995-102/robot/build/ros_gz_example_bringup/CMakeFiles/ros_gz_example_bringup_uninstall.rule",
 			"sourceGroupIndex" : 1
 		}
 	],

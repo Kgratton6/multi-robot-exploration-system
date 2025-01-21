@@ -7,7 +7,7 @@
 				{
 					"build" : ".",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-.-8bc2da831f7a423dff2f.json",
+					"jsonFile" : "directory-.-3d1124d8ab63ede92124.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.12"
@@ -29,7 +29,7 @@
 					[
 						0
 					],
-					"name" : "ros_gz_example_application",
+					"name" : "ros_gz_example_description",
 					"targetIndexes" : 
 					[
 						0,
@@ -41,15 +41,15 @@
 			[
 				{
 					"directoryIndex" : 0,
-					"id" : "ros_gz_example_application_uninstall::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-ros_gz_example_application_uninstall-04ac5e38ab44ebe9c876.json",
-					"name" : "ros_gz_example_application_uninstall",
+					"id" : "ros_gz_example_description_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ros_gz_example_description_uninstall-706dc11a3290e1d9ff9b.json",
+					"name" : "ros_gz_example_description_uninstall",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "uninstall::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-uninstall-5d689c8a96104b47599b.json",
+					"jsonFile" : "target-uninstall-0785492e02f904bb1dc2.json",
 					"name" : "uninstall",
 					"projectIndex" : 0
 				}
@@ -59,8 +59,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/home/kevin/INF3995-102/robot/build/ros_gz_example_application",
-		"source" : "/home/kevin/INF3995-102/robot/src/ros_gz_example_application"
+		"build" : "/home/kylor/INF3995-102/robot/build/ros_gz_example_description",
+		"source" : "/home/kylor/INF3995-102/robot/src/ros_gz_example_description"
 	},
 	"version" : 
 	{

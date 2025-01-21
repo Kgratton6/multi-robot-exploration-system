@@ -24,7 +24,7 @@
 			{
 				"command" : 2,
 				"file" : 4,
-				"line" : 5,
+				"line" : 10,
 				"parent" : 0
 			},
 			{
@@ -69,8 +69,8 @@
 			}
 		]
 	},
-	"id" : "ros_gz_example_application_uninstall::@6890427a1f51a3e7e1df",
-	"name" : "ros_gz_example_application_uninstall",
+	"id" : "ros_gz_example_gazebo_uninstall::@6890427a1f51a3e7e1df",
+	"name" : "ros_gz_example_gazebo_uninstall",
 	"paths" : 
 	{
 		"build" : ".",
@@ -98,13 +98,13 @@
 		{
 			"backtrace" : 9,
 			"isGenerated" : true,
-			"path" : "/home/kevin/INF3995-102/robot/build/ros_gz_example_application/CMakeFiles/ros_gz_example_application_uninstall",
+			"path" : "/home/kylor/INF3995-102/robot/build/ros_gz_example_gazebo/CMakeFiles/ros_gz_example_gazebo_uninstall",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "/home/kevin/INF3995-102/robot/build/ros_gz_example_application/CMakeFiles/ros_gz_example_application_uninstall.rule",
+			"path" : "/home/kylor/INF3995-102/robot/build/ros_gz_example_gazebo/CMakeFiles/ros_gz_example_gazebo_uninstall.rule",
 			"sourceGroupIndex" : 1
 		}
 	],

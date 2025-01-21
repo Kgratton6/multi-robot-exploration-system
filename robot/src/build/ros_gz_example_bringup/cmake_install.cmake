@@ -1,8 +1,8 @@
-# Install script for directory: /home/kevin/setup/INF3995-Templates/project_ws/src/ros_gz_example_bringup
+# Install script for directory: /home/kylor/setup/INF3995-Templates/project_ws/src/ros_gz_example_bringup
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/kevin/setup/INF3995-Templates/project_ws/src/install/ros_gz_example_bringup")
+  set(CMAKE_INSTALL_PREFIX "/home/kylor/setup/INF3995-Templates/project_ws/src/install/ros_gz_example_bringup")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -43,7 +43,7 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("/home/kevin/setup/INF3995-Templates/project_ws/src/build/ros_gz_example_bringup/ament_cmake_symlink_install/ament_cmake_symlink_install.cmake")
+  include("/home/kylor/setup/INF3995-Templates/project_ws/src/build/ros_gz_example_bringup/ament_cmake_symlink_install/ament_cmake_symlink_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -54,5 +54,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/kevin/setup/INF3995-Templates/project_ws/src/build/ros_gz_example_bringup/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/kylor/setup/INF3995-Templates/project_ws/src/build/ros_gz_example_bringup/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

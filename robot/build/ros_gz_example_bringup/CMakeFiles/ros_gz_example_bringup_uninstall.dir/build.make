@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kevin/INF3995-102/robot/src/ros_gz_example_bringup
+CMAKE_SOURCE_DIR = /home/kylor/INF3995-102/robot/src/ros_gz_example_bringup
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kevin/INF3995-102/robot/build/ros_gz_example_bringup
+CMAKE_BINARY_DIR = /home/kylor/INF3995-102/robot/build/ros_gz_example_bringup
 
 # Utility rule file for ros_gz_example_bringup_uninstall.
 
@@ -67,7 +67,7 @@ include CMakeFiles/ros_gz_example_bringup_uninstall.dir/compiler_depend.make
 include CMakeFiles/ros_gz_example_bringup_uninstall.dir/progress.make
 
 CMakeFiles/ros_gz_example_bringup_uninstall:
-	/usr/bin/cmake -P /home/kevin/INF3995-102/robot/build/ros_gz_example_bringup/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/kylor/INF3995-102/robot/build/ros_gz_example_bringup/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 ros_gz_example_bringup_uninstall: CMakeFiles/ros_gz_example_bringup_uninstall
 ros_gz_example_bringup_uninstall: CMakeFiles/ros_gz_example_bringup_uninstall.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/ros_gz_example_bringup_uninstall.dir/clean:
 .PHONY : CMakeFiles/ros_gz_example_bringup_uninstall.dir/clean
 
 CMakeFiles/ros_gz_example_bringup_uninstall.dir/depend:
-	cd /home/kevin/INF3995-102/robot/build/ros_gz_example_bringup && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kevin/INF3995-102/robot/src/ros_gz_example_bringup /home/kevin/INF3995-102/robot/src/ros_gz_example_bringup /home/kevin/INF3995-102/robot/build/ros_gz_example_bringup /home/kevin/INF3995-102/robot/build/ros_gz_example_bringup /home/kevin/INF3995-102/robot/build/ros_gz_example_bringup/CMakeFiles/ros_gz_example_bringup_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/kylor/INF3995-102/robot/build/ros_gz_example_bringup && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kylor/INF3995-102/robot/src/ros_gz_example_bringup /home/kylor/INF3995-102/robot/src/ros_gz_example_bringup /home/kylor/INF3995-102/robot/build/ros_gz_example_bringup /home/kylor/INF3995-102/robot/build/ros_gz_example_bringup /home/kylor/INF3995-102/robot/build/ros_gz_example_bringup/CMakeFiles/ros_gz_example_bringup_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ros_gz_example_bringup_uninstall.dir/depend
 

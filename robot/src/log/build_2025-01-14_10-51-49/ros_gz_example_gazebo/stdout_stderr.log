@@ -13,7 +13,7 @@
 -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
 -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
 -- Override CMake install command with custom implementation using symlinks instead of copying resources
--- Found ros_gz_example_description: 0.0.0 (/home/kevin/setup/INF3995-Templates/project_ws/src/install/ros_gz_example_description/share/ros_gz_example_description/cmake)
+-- Found ros_gz_example_description: 0.0.0 (/home/kylor/setup/INF3995-Templates/project_ws/src/install/ros_gz_example_description/share/ros_gz_example_description/cmake)
 -- Looking for ignition-plugin1 -- found version 1.4.0
 -- Searching for dependencies of ignition-plugin1
 -- Searching for <ignition-plugin1> component [register]
@@ -223,24 +223,24 @@
 -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/kevin/setup/INF3995-Templates/project_ws/src/build/ros_gz_example_gazebo
+-- Build files have been written to: /home/kylor/setup/INF3995-Templates/project_ws/src/build/ros_gz_example_gazebo
 -- Install configuration: ""
 -- Execute custom install script
--- Symlinking: /home/kevin/setup/INF3995-Templates/project_ws/src/install/ros_gz_example_gazebo/share/ros_gz_example_gazebo/worlds/diff_drive.sdf
--- Symlinking: /home/kevin/setup/INF3995-Templates/project_ws/src/install/ros_gz_example_gazebo/share/ros_gz_example_gazebo/environment/ros_gz_example_gazebo.dsv
--- Symlinking: /home/kevin/setup/INF3995-Templates/project_ws/src/install/ros_gz_example_gazebo/share/ros_gz_example_gazebo/environment/ros_gz_example_gazebo.sh
--- Symlinking: /home/kevin/setup/INF3995-Templates/project_ws/src/install/ros_gz_example_gazebo/share/ament_index/resource_index/package_run_dependencies/ros_gz_example_gazebo
--- Symlinking: /home/kevin/setup/INF3995-Templates/project_ws/src/install/ros_gz_example_gazebo/share/ament_index/resource_index/parent_prefix_path/ros_gz_example_gazebo
--- Symlinking: /home/kevin/setup/INF3995-Templates/project_ws/src/install/ros_gz_example_gazebo/share/ros_gz_example_gazebo/environment/ament_prefix_path.sh
--- Symlinking: /home/kevin/setup/INF3995-Templates/project_ws/src/install/ros_gz_example_gazebo/share/ros_gz_example_gazebo/environment/ament_prefix_path.dsv
--- Symlinking: /home/kevin/setup/INF3995-Templates/project_ws/src/install/ros_gz_example_gazebo/share/ros_gz_example_gazebo/environment/path.sh
--- Symlinking: /home/kevin/setup/INF3995-Templates/project_ws/src/install/ros_gz_example_gazebo/share/ros_gz_example_gazebo/environment/path.dsv
--- Symlinking: /home/kevin/setup/INF3995-Templates/project_ws/src/install/ros_gz_example_gazebo/share/ros_gz_example_gazebo/local_setup.bash
--- Symlinking: /home/kevin/setup/INF3995-Templates/project_ws/src/install/ros_gz_example_gazebo/share/ros_gz_example_gazebo/local_setup.sh
--- Symlinking: /home/kevin/setup/INF3995-Templates/project_ws/src/install/ros_gz_example_gazebo/share/ros_gz_example_gazebo/local_setup.zsh
--- Symlinking: /home/kevin/setup/INF3995-Templates/project_ws/src/install/ros_gz_example_gazebo/share/ros_gz_example_gazebo/local_setup.dsv
--- Symlinking: /home/kevin/setup/INF3995-Templates/project_ws/src/install/ros_gz_example_gazebo/share/ros_gz_example_gazebo/package.dsv
--- Symlinking: /home/kevin/setup/INF3995-Templates/project_ws/src/install/ros_gz_example_gazebo/share/ament_index/resource_index/packages/ros_gz_example_gazebo
--- Symlinking: /home/kevin/setup/INF3995-Templates/project_ws/src/install/ros_gz_example_gazebo/share/ros_gz_example_gazebo/cmake/ros_gz_example_gazeboConfig.cmake
--- Symlinking: /home/kevin/setup/INF3995-Templates/project_ws/src/install/ros_gz_example_gazebo/share/ros_gz_example_gazebo/cmake/ros_gz_example_gazeboConfig-version.cmake
--- Symlinking: /home/kevin/setup/INF3995-Templates/project_ws/src/install/ros_gz_example_gazebo/share/ros_gz_example_gazebo/package.xml
+-- Symlinking: /home/kylor/setup/INF3995-Templates/project_ws/src/install/ros_gz_example_gazebo/share/ros_gz_example_gazebo/worlds/diff_drive.sdf
+-- Symlinking: /home/kylor/setup/INF3995-Templates/project_ws/src/install/ros_gz_example_gazebo/share/ros_gz_example_gazebo/environment/ros_gz_example_gazebo.dsv
+-- Symlinking: /home/kylor/setup/INF3995-Templates/project_ws/src/install/ros_gz_example_gazebo/share/ros_gz_example_gazebo/environment/ros_gz_example_gazebo.sh
+-- Symlinking: /home/kylor/setup/INF3995-Templates/project_ws/src/install/ros_gz_example_gazebo/share/ament_index/resource_index/package_run_dependencies/ros_gz_example_gazebo
+-- Symlinking: /home/kylor/setup/INF3995-Templates/project_ws/src/install/ros_gz_example_gazebo/share/ament_index/resource_index/parent_prefix_path/ros_gz_example_gazebo
+-- Symlinking: /home/kylor/setup/INF3995-Templates/project_ws/src/install/ros_gz_example_gazebo/share/ros_gz_example_gazebo/environment/ament_prefix_path.sh
+-- Symlinking: /home/kylor/setup/INF3995-Templates/project_ws/src/install/ros_gz_example_gazebo/share/ros_gz_example_gazebo/environment/ament_prefix_path.dsv
+-- Symlinking: /home/kylor/setup/INF3995-Templates/project_ws/src/install/ros_gz_example_gazebo/share/ros_gz_example_gazebo/environment/path.sh
+-- Symlinking: /home/kylor/setup/INF3995-Templates/project_ws/src/install/ros_gz_example_gazebo/share/ros_gz_example_gazebo/environment/path.dsv
+-- Symlinking: /home/kylor/setup/INF3995-Templates/project_ws/src/install/ros_gz_example_gazebo/share/ros_gz_example_gazebo/local_setup.bash
+-- Symlinking: /home/kylor/setup/INF3995-Templates/project_ws/src/install/ros_gz_example_gazebo/share/ros_gz_example_gazebo/local_setup.sh
+-- Symlinking: /home/kylor/setup/INF3995-Templates/project_ws/src/install/ros_gz_example_gazebo/share/ros_gz_example_gazebo/local_setup.zsh
+-- Symlinking: /home/kylor/setup/INF3995-Templates/project_ws/src/install/ros_gz_example_gazebo/share/ros_gz_example_gazebo/local_setup.dsv
+-- Symlinking: /home/kylor/setup/INF3995-Templates/project_ws/src/install/ros_gz_example_gazebo/share/ros_gz_example_gazebo/package.dsv
+-- Symlinking: /home/kylor/setup/INF3995-Templates/project_ws/src/install/ros_gz_example_gazebo/share/ament_index/resource_index/packages/ros_gz_example_gazebo
+-- Symlinking: /home/kylor/setup/INF3995-Templates/project_ws/src/install/ros_gz_example_gazebo/share/ros_gz_example_gazebo/cmake/ros_gz_example_gazeboConfig.cmake
+-- Symlinking: /home/kylor/setup/INF3995-Templates/project_ws/src/install/ros_gz_example_gazebo/share/ros_gz_example_gazebo/cmake/ros_gz_example_gazeboConfig-version.cmake
+-- Symlinking: /home/kylor/setup/INF3995-Templates/project_ws/src/install/ros_gz_example_gazebo/share/ros_gz_example_gazebo/package.xml

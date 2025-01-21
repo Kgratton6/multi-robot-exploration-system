@@ -59,8 +59,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/home/kevin/setup/INF3995-Templates/project_ws/src/build/ros_gz_example_application",
-		"source" : "/home/kevin/setup/INF3995-Templates/project_ws/src/ros_gz_example_application"
+		"build" : "/home/kylor/setup/INF3995-Templates/project_ws/src/build/ros_gz_example_application",
+		"source" : "/home/kylor/setup/INF3995-Templates/project_ws/src/ros_gz_example_application"
 	},
 	"version" : 
 	{

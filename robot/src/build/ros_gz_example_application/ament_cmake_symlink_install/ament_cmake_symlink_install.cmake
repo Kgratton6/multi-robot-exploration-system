@@ -23,7 +23,7 @@ function(ament_cmake_symlink_install_directory cmake_current_source_dir)
 
   # make destination absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/kevin/setup/INF3995-Templates/project_ws/src/install/ros_gz_example_application/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/kylor/setup/INF3995-Templates/project_ws/src/install/ros_gz_example_application/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -123,7 +123,7 @@ function(ament_cmake_symlink_install_files cmake_current_source_dir)
 
   # make destination an absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/kevin/setup/INF3995-Templates/project_ws/src/install/ros_gz_example_application/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/kylor/setup/INF3995-Templates/project_ws/src/install/ros_gz_example_application/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -181,7 +181,7 @@ function(ament_cmake_symlink_install_programs cmake_current_source_dir)
 
   # make destination an absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/kevin/setup/INF3995-Templates/project_ws/src/install/ros_gz_example_application/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/kylor/setup/INF3995-Templates/project_ws/src/install/ros_gz_example_application/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -251,7 +251,7 @@ function(ament_cmake_symlink_install_targets)
 
     # make destination an absolute path and ensure that it exists
     if(NOT IS_ABSOLUTE "${destination}")
-      set(destination "/home/kevin/setup/INF3995-Templates/project_ws/src/install/ros_gz_example_application/${destination}")
+      set(destination "/home/kylor/setup/INF3995-Templates/project_ws/src/install/ros_gz_example_application/${destination}")
     endif()
     if(NOT EXISTS "${destination}")
       file(MAKE_DIRECTORY "${destination}")
@@ -310,44 +310,44 @@ message(STATUS "Execute custom install script")
 
 # begin of custom install code
 
-# install(FILES "/home/kevin/setup/INF3995-Templates/project_ws/src/build/ros_gz_example_application/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/ros_gz_example_application" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
-ament_cmake_symlink_install_files("/home/kevin/setup/INF3995-Templates/project_ws/src/ros_gz_example_application" FILES "/home/kevin/setup/INF3995-Templates/project_ws/src/build/ros_gz_example_application/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/ros_gz_example_application" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+# install(FILES "/home/kylor/setup/INF3995-Templates/project_ws/src/build/ros_gz_example_application/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/ros_gz_example_application" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+ament_cmake_symlink_install_files("/home/kylor/setup/INF3995-Templates/project_ws/src/ros_gz_example_application" FILES "/home/kylor/setup/INF3995-Templates/project_ws/src/build/ros_gz_example_application/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/ros_gz_example_application" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 
-# install(FILES "/home/kevin/setup/INF3995-Templates/project_ws/src/build/ros_gz_example_application/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/ros_gz_example_application" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
-ament_cmake_symlink_install_files("/home/kevin/setup/INF3995-Templates/project_ws/src/ros_gz_example_application" FILES "/home/kevin/setup/INF3995-Templates/project_ws/src/build/ros_gz_example_application/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/ros_gz_example_application" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+# install(FILES "/home/kylor/setup/INF3995-Templates/project_ws/src/build/ros_gz_example_application/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/ros_gz_example_application" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+ament_cmake_symlink_install_files("/home/kylor/setup/INF3995-Templates/project_ws/src/ros_gz_example_application" FILES "/home/kylor/setup/INF3995-Templates/project_ws/src/build/ros_gz_example_application/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/ros_gz_example_application" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
 
 # install(FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/ros_gz_example_application/environment")
-ament_cmake_symlink_install_files("/home/kevin/setup/INF3995-Templates/project_ws/src/ros_gz_example_application" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/ros_gz_example_application/environment")
+ament_cmake_symlink_install_files("/home/kylor/setup/INF3995-Templates/project_ws/src/ros_gz_example_application" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/ros_gz_example_application/environment")
 
-# install(FILES "/home/kevin/setup/INF3995-Templates/project_ws/src/build/ros_gz_example_application/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/ros_gz_example_application/environment")
-ament_cmake_symlink_install_files("/home/kevin/setup/INF3995-Templates/project_ws/src/ros_gz_example_application" FILES "/home/kevin/setup/INF3995-Templates/project_ws/src/build/ros_gz_example_application/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/ros_gz_example_application/environment")
+# install(FILES "/home/kylor/setup/INF3995-Templates/project_ws/src/build/ros_gz_example_application/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/ros_gz_example_application/environment")
+ament_cmake_symlink_install_files("/home/kylor/setup/INF3995-Templates/project_ws/src/ros_gz_example_application" FILES "/home/kylor/setup/INF3995-Templates/project_ws/src/build/ros_gz_example_application/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/ros_gz_example_application/environment")
 
 # install(FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/ros_gz_example_application/environment")
-ament_cmake_symlink_install_files("/home/kevin/setup/INF3995-Templates/project_ws/src/ros_gz_example_application" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/ros_gz_example_application/environment")
+ament_cmake_symlink_install_files("/home/kylor/setup/INF3995-Templates/project_ws/src/ros_gz_example_application" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/ros_gz_example_application/environment")
 
-# install(FILES "/home/kevin/setup/INF3995-Templates/project_ws/src/build/ros_gz_example_application/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/ros_gz_example_application/environment")
-ament_cmake_symlink_install_files("/home/kevin/setup/INF3995-Templates/project_ws/src/ros_gz_example_application" FILES "/home/kevin/setup/INF3995-Templates/project_ws/src/build/ros_gz_example_application/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/ros_gz_example_application/environment")
+# install(FILES "/home/kylor/setup/INF3995-Templates/project_ws/src/build/ros_gz_example_application/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/ros_gz_example_application/environment")
+ament_cmake_symlink_install_files("/home/kylor/setup/INF3995-Templates/project_ws/src/ros_gz_example_application" FILES "/home/kylor/setup/INF3995-Templates/project_ws/src/build/ros_gz_example_application/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/ros_gz_example_application/environment")
 
-# install(FILES "/home/kevin/setup/INF3995-Templates/project_ws/src/build/ros_gz_example_application/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/ros_gz_example_application")
-ament_cmake_symlink_install_files("/home/kevin/setup/INF3995-Templates/project_ws/src/ros_gz_example_application" FILES "/home/kevin/setup/INF3995-Templates/project_ws/src/build/ros_gz_example_application/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/ros_gz_example_application")
+# install(FILES "/home/kylor/setup/INF3995-Templates/project_ws/src/build/ros_gz_example_application/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/ros_gz_example_application")
+ament_cmake_symlink_install_files("/home/kylor/setup/INF3995-Templates/project_ws/src/ros_gz_example_application" FILES "/home/kylor/setup/INF3995-Templates/project_ws/src/build/ros_gz_example_application/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/ros_gz_example_application")
 
-# install(FILES "/home/kevin/setup/INF3995-Templates/project_ws/src/build/ros_gz_example_application/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/ros_gz_example_application")
-ament_cmake_symlink_install_files("/home/kevin/setup/INF3995-Templates/project_ws/src/ros_gz_example_application" FILES "/home/kevin/setup/INF3995-Templates/project_ws/src/build/ros_gz_example_application/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/ros_gz_example_application")
+# install(FILES "/home/kylor/setup/INF3995-Templates/project_ws/src/build/ros_gz_example_application/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/ros_gz_example_application")
+ament_cmake_symlink_install_files("/home/kylor/setup/INF3995-Templates/project_ws/src/ros_gz_example_application" FILES "/home/kylor/setup/INF3995-Templates/project_ws/src/build/ros_gz_example_application/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/ros_gz_example_application")
 
-# install(FILES "/home/kevin/setup/INF3995-Templates/project_ws/src/build/ros_gz_example_application/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/ros_gz_example_application")
-ament_cmake_symlink_install_files("/home/kevin/setup/INF3995-Templates/project_ws/src/ros_gz_example_application" FILES "/home/kevin/setup/INF3995-Templates/project_ws/src/build/ros_gz_example_application/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/ros_gz_example_application")
+# install(FILES "/home/kylor/setup/INF3995-Templates/project_ws/src/build/ros_gz_example_application/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/ros_gz_example_application")
+ament_cmake_symlink_install_files("/home/kylor/setup/INF3995-Templates/project_ws/src/ros_gz_example_application" FILES "/home/kylor/setup/INF3995-Templates/project_ws/src/build/ros_gz_example_application/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/ros_gz_example_application")
 
-# install(FILES "/home/kevin/setup/INF3995-Templates/project_ws/src/build/ros_gz_example_application/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/ros_gz_example_application")
-ament_cmake_symlink_install_files("/home/kevin/setup/INF3995-Templates/project_ws/src/ros_gz_example_application" FILES "/home/kevin/setup/INF3995-Templates/project_ws/src/build/ros_gz_example_application/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/ros_gz_example_application")
+# install(FILES "/home/kylor/setup/INF3995-Templates/project_ws/src/build/ros_gz_example_application/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/ros_gz_example_application")
+ament_cmake_symlink_install_files("/home/kylor/setup/INF3995-Templates/project_ws/src/ros_gz_example_application" FILES "/home/kylor/setup/INF3995-Templates/project_ws/src/build/ros_gz_example_application/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/ros_gz_example_application")
 
-# install(FILES "/home/kevin/setup/INF3995-Templates/project_ws/src/build/ros_gz_example_application/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/ros_gz_example_application")
-ament_cmake_symlink_install_files("/home/kevin/setup/INF3995-Templates/project_ws/src/ros_gz_example_application" FILES "/home/kevin/setup/INF3995-Templates/project_ws/src/build/ros_gz_example_application/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/ros_gz_example_application")
+# install(FILES "/home/kylor/setup/INF3995-Templates/project_ws/src/build/ros_gz_example_application/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/ros_gz_example_application")
+ament_cmake_symlink_install_files("/home/kylor/setup/INF3995-Templates/project_ws/src/ros_gz_example_application" FILES "/home/kylor/setup/INF3995-Templates/project_ws/src/build/ros_gz_example_application/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/ros_gz_example_application")
 
-# install(FILES "/home/kevin/setup/INF3995-Templates/project_ws/src/build/ros_gz_example_application/ament_cmake_index/share/ament_index/resource_index/packages/ros_gz_example_application" "DESTINATION" "share/ament_index/resource_index/packages")
-ament_cmake_symlink_install_files("/home/kevin/setup/INF3995-Templates/project_ws/src/ros_gz_example_application" FILES "/home/kevin/setup/INF3995-Templates/project_ws/src/build/ros_gz_example_application/ament_cmake_index/share/ament_index/resource_index/packages/ros_gz_example_application" "DESTINATION" "share/ament_index/resource_index/packages")
+# install(FILES "/home/kylor/setup/INF3995-Templates/project_ws/src/build/ros_gz_example_application/ament_cmake_index/share/ament_index/resource_index/packages/ros_gz_example_application" "DESTINATION" "share/ament_index/resource_index/packages")
+ament_cmake_symlink_install_files("/home/kylor/setup/INF3995-Templates/project_ws/src/ros_gz_example_application" FILES "/home/kylor/setup/INF3995-Templates/project_ws/src/build/ros_gz_example_application/ament_cmake_index/share/ament_index/resource_index/packages/ros_gz_example_application" "DESTINATION" "share/ament_index/resource_index/packages")
 
-# install(FILES "/home/kevin/setup/INF3995-Templates/project_ws/src/build/ros_gz_example_application/ament_cmake_core/ros_gz_example_applicationConfig.cmake" "/home/kevin/setup/INF3995-Templates/project_ws/src/build/ros_gz_example_application/ament_cmake_core/ros_gz_example_applicationConfig-version.cmake" "DESTINATION" "share/ros_gz_example_application/cmake")
-ament_cmake_symlink_install_files("/home/kevin/setup/INF3995-Templates/project_ws/src/ros_gz_example_application" FILES "/home/kevin/setup/INF3995-Templates/project_ws/src/build/ros_gz_example_application/ament_cmake_core/ros_gz_example_applicationConfig.cmake" "/home/kevin/setup/INF3995-Templates/project_ws/src/build/ros_gz_example_application/ament_cmake_core/ros_gz_example_applicationConfig-version.cmake" "DESTINATION" "share/ros_gz_example_application/cmake")
+# install(FILES "/home/kylor/setup/INF3995-Templates/project_ws/src/build/ros_gz_example_application/ament_cmake_core/ros_gz_example_applicationConfig.cmake" "/home/kylor/setup/INF3995-Templates/project_ws/src/build/ros_gz_example_application/ament_cmake_core/ros_gz_example_applicationConfig-version.cmake" "DESTINATION" "share/ros_gz_example_application/cmake")
+ament_cmake_symlink_install_files("/home/kylor/setup/INF3995-Templates/project_ws/src/ros_gz_example_application" FILES "/home/kylor/setup/INF3995-Templates/project_ws/src/build/ros_gz_example_application/ament_cmake_core/ros_gz_example_applicationConfig.cmake" "/home/kylor/setup/INF3995-Templates/project_ws/src/build/ros_gz_example_application/ament_cmake_core/ros_gz_example_applicationConfig-version.cmake" "DESTINATION" "share/ros_gz_example_application/cmake")
 
-# install(FILES "/home/kevin/setup/INF3995-Templates/project_ws/src/ros_gz_example_application/package.xml" "DESTINATION" "share/ros_gz_example_application")
-ament_cmake_symlink_install_files("/home/kevin/setup/INF3995-Templates/project_ws/src/ros_gz_example_application" FILES "/home/kevin/setup/INF3995-Templates/project_ws/src/ros_gz_example_application/package.xml" "DESTINATION" "share/ros_gz_example_application")
+# install(FILES "/home/kylor/setup/INF3995-Templates/project_ws/src/ros_gz_example_application/package.xml" "DESTINATION" "share/ros_gz_example_application")
+ament_cmake_symlink_install_files("/home/kylor/setup/INF3995-Templates/project_ws/src/ros_gz_example_application" FILES "/home/kylor/setup/INF3995-Templates/project_ws/src/ros_gz_example_application/package.xml" "DESTINATION" "share/ros_gz_example_application")

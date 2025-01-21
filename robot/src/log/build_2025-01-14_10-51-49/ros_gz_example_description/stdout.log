@@ -4,35 +4,35 @@
 -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/kevin/setup/INF3995-Templates/project_ws/src/build/ros_gz_example_description
+-- Build files have been written to: /home/kylor/setup/INF3995-Templates/project_ws/src/build/ros_gz_example_description
 -- Install configuration: ""
 -- Execute custom install script
--- Symlinking: /home/kevin/setup/INF3995-Templates/project_ws/src/install/ros_gz_example_description/share/ros_gz_example_description/models/limo_ackerman/meshes/limo_base.dae
--- Symlinking: /home/kevin/setup/INF3995-Templates/project_ws/src/install/ros_gz_example_description/share/ros_gz_example_description/models/limo_ackerman/meshes/limo_base.stl
--- Symlinking: /home/kevin/setup/INF3995-Templates/project_ws/src/install/ros_gz_example_description/share/ros_gz_example_description/models/limo_ackerman/meshes/limo_wheel.dae
--- Symlinking: /home/kevin/setup/INF3995-Templates/project_ws/src/install/ros_gz_example_description/share/ros_gz_example_description/models/limo_ackerman/meshes/limo_wheel.stl
--- Symlinking: /home/kevin/setup/INF3995-Templates/project_ws/src/install/ros_gz_example_description/share/ros_gz_example_description/models/limo_ackerman/model.config
--- Symlinking: /home/kevin/setup/INF3995-Templates/project_ws/src/install/ros_gz_example_description/share/ros_gz_example_description/models/limo_ackerman/model.sdf
--- Symlinking: /home/kevin/setup/INF3995-Templates/project_ws/src/install/ros_gz_example_description/share/ros_gz_example_description/models/limo_diff_drive/meshes/limo_base.dae
--- Symlinking: /home/kevin/setup/INF3995-Templates/project_ws/src/install/ros_gz_example_description/share/ros_gz_example_description/models/limo_diff_drive/meshes/limo_base.stl
--- Symlinking: /home/kevin/setup/INF3995-Templates/project_ws/src/install/ros_gz_example_description/share/ros_gz_example_description/models/limo_diff_drive/meshes/limo_wheel.dae
--- Symlinking: /home/kevin/setup/INF3995-Templates/project_ws/src/install/ros_gz_example_description/share/ros_gz_example_description/models/limo_diff_drive/meshes/limo_wheel.stl
--- Symlinking: /home/kevin/setup/INF3995-Templates/project_ws/src/install/ros_gz_example_description/share/ros_gz_example_description/models/limo_diff_drive/model.config
--- Symlinking: /home/kevin/setup/INF3995-Templates/project_ws/src/install/ros_gz_example_description/share/ros_gz_example_description/models/limo_diff_drive/model.sdf
--- Symlinking: /home/kevin/setup/INF3995-Templates/project_ws/src/install/ros_gz_example_description/share/ros_gz_example_description/environment/ros_gz_example_description.dsv
--- Symlinking: /home/kevin/setup/INF3995-Templates/project_ws/src/install/ros_gz_example_description/share/ros_gz_example_description/environment/ros_gz_example_description.sh
--- Symlinking: /home/kevin/setup/INF3995-Templates/project_ws/src/install/ros_gz_example_description/share/ament_index/resource_index/package_run_dependencies/ros_gz_example_description
--- Symlinking: /home/kevin/setup/INF3995-Templates/project_ws/src/install/ros_gz_example_description/share/ament_index/resource_index/parent_prefix_path/ros_gz_example_description
--- Symlinking: /home/kevin/setup/INF3995-Templates/project_ws/src/install/ros_gz_example_description/share/ros_gz_example_description/environment/ament_prefix_path.sh
--- Symlinking: /home/kevin/setup/INF3995-Templates/project_ws/src/install/ros_gz_example_description/share/ros_gz_example_description/environment/ament_prefix_path.dsv
--- Symlinking: /home/kevin/setup/INF3995-Templates/project_ws/src/install/ros_gz_example_description/share/ros_gz_example_description/environment/path.sh
--- Symlinking: /home/kevin/setup/INF3995-Templates/project_ws/src/install/ros_gz_example_description/share/ros_gz_example_description/environment/path.dsv
--- Symlinking: /home/kevin/setup/INF3995-Templates/project_ws/src/install/ros_gz_example_description/share/ros_gz_example_description/local_setup.bash
--- Symlinking: /home/kevin/setup/INF3995-Templates/project_ws/src/install/ros_gz_example_description/share/ros_gz_example_description/local_setup.sh
--- Symlinking: /home/kevin/setup/INF3995-Templates/project_ws/src/install/ros_gz_example_description/share/ros_gz_example_description/local_setup.zsh
--- Symlinking: /home/kevin/setup/INF3995-Templates/project_ws/src/install/ros_gz_example_description/share/ros_gz_example_description/local_setup.dsv
--- Symlinking: /home/kevin/setup/INF3995-Templates/project_ws/src/install/ros_gz_example_description/share/ros_gz_example_description/package.dsv
--- Symlinking: /home/kevin/setup/INF3995-Templates/project_ws/src/install/ros_gz_example_description/share/ament_index/resource_index/packages/ros_gz_example_description
--- Symlinking: /home/kevin/setup/INF3995-Templates/project_ws/src/install/ros_gz_example_description/share/ros_gz_example_description/cmake/ros_gz_example_descriptionConfig.cmake
--- Symlinking: /home/kevin/setup/INF3995-Templates/project_ws/src/install/ros_gz_example_description/share/ros_gz_example_description/cmake/ros_gz_example_descriptionConfig-version.cmake
--- Symlinking: /home/kevin/setup/INF3995-Templates/project_ws/src/install/ros_gz_example_description/share/ros_gz_example_description/package.xml
+-- Symlinking: /home/kylor/setup/INF3995-Templates/project_ws/src/install/ros_gz_example_description/share/ros_gz_example_description/models/limo_ackerman/meshes/limo_base.dae
+-- Symlinking: /home/kylor/setup/INF3995-Templates/project_ws/src/install/ros_gz_example_description/share/ros_gz_example_description/models/limo_ackerman/meshes/limo_base.stl
+-- Symlinking: /home/kylor/setup/INF3995-Templates/project_ws/src/install/ros_gz_example_description/share/ros_gz_example_description/models/limo_ackerman/meshes/limo_wheel.dae
+-- Symlinking: /home/kylor/setup/INF3995-Templates/project_ws/src/install/ros_gz_example_description/share/ros_gz_example_description/models/limo_ackerman/meshes/limo_wheel.stl
+-- Symlinking: /home/kylor/setup/INF3995-Templates/project_ws/src/install/ros_gz_example_description/share/ros_gz_example_description/models/limo_ackerman/model.config
+-- Symlinking: /home/kylor/setup/INF3995-Templates/project_ws/src/install/ros_gz_example_description/share/ros_gz_example_description/models/limo_ackerman/model.sdf
+-- Symlinking: /home/kylor/setup/INF3995-Templates/project_ws/src/install/ros_gz_example_description/share/ros_gz_example_description/models/limo_diff_drive/meshes/limo_base.dae
+-- Symlinking: /home/kylor/setup/INF3995-Templates/project_ws/src/install/ros_gz_example_description/share/ros_gz_example_description/models/limo_diff_drive/meshes/limo_base.stl
+-- Symlinking: /home/kylor/setup/INF3995-Templates/project_ws/src/install/ros_gz_example_description/share/ros_gz_example_description/models/limo_diff_drive/meshes/limo_wheel.dae
+-- Symlinking: /home/kylor/setup/INF3995-Templates/project_ws/src/install/ros_gz_example_description/share/ros_gz_example_description/models/limo_diff_drive/meshes/limo_wheel.stl
+-- Symlinking: /home/kylor/setup/INF3995-Templates/project_ws/src/install/ros_gz_example_description/share/ros_gz_example_description/models/limo_diff_drive/model.config
+-- Symlinking: /home/kylor/setup/INF3995-Templates/project_ws/src/install/ros_gz_example_description/share/ros_gz_example_description/models/limo_diff_drive/model.sdf
+-- Symlinking: /home/kylor/setup/INF3995-Templates/project_ws/src/install/ros_gz_example_description/share/ros_gz_example_description/environment/ros_gz_example_description.dsv
+-- Symlinking: /home/kylor/setup/INF3995-Templates/project_ws/src/install/ros_gz_example_description/share/ros_gz_example_description/environment/ros_gz_example_description.sh
+-- Symlinking: /home/kylor/setup/INF3995-Templates/project_ws/src/install/ros_gz_example_description/share/ament_index/resource_index/package_run_dependencies/ros_gz_example_description
+-- Symlinking: /home/kylor/setup/INF3995-Templates/project_ws/src/install/ros_gz_example_description/share/ament_index/resource_index/parent_prefix_path/ros_gz_example_description
+-- Symlinking: /home/kylor/setup/INF3995-Templates/project_ws/src/install/ros_gz_example_description/share/ros_gz_example_description/environment/ament_prefix_path.sh
+-- Symlinking: /home/kylor/setup/INF3995-Templates/project_ws/src/install/ros_gz_example_description/share/ros_gz_example_description/environment/ament_prefix_path.dsv
+-- Symlinking: /home/kylor/setup/INF3995-Templates/project_ws/src/install/ros_gz_example_description/share/ros_gz_example_description/environment/path.sh
+-- Symlinking: /home/kylor/setup/INF3995-Templates/project_ws/src/install/ros_gz_example_description/share/ros_gz_example_description/environment/path.dsv
+-- Symlinking: /home/kylor/setup/INF3995-Templates/project_ws/src/install/ros_gz_example_description/share/ros_gz_example_description/local_setup.bash
+-- Symlinking: /home/kylor/setup/INF3995-Templates/project_ws/src/install/ros_gz_example_description/share/ros_gz_example_description/local_setup.sh
+-- Symlinking: /home/kylor/setup/INF3995-Templates/project_ws/src/install/ros_gz_example_description/share/ros_gz_example_description/local_setup.zsh
+-- Symlinking: /home/kylor/setup/INF3995-Templates/project_ws/src/install/ros_gz_example_description/share/ros_gz_example_description/local_setup.dsv
+-- Symlinking: /home/kylor/setup/INF3995-Templates/project_ws/src/install/ros_gz_example_description/share/ros_gz_example_description/package.dsv
+-- Symlinking: /home/kylor/setup/INF3995-Templates/project_ws/src/install/ros_gz_example_description/share/ament_index/resource_index/packages/ros_gz_example_description
+-- Symlinking: /home/kylor/setup/INF3995-Templates/project_ws/src/install/ros_gz_example_description/share/ros_gz_example_description/cmake/ros_gz_example_descriptionConfig.cmake
+-- Symlinking: /home/kylor/setup/INF3995-Templates/project_ws/src/install/ros_gz_example_description/share/ros_gz_example_description/cmake/ros_gz_example_descriptionConfig-version.cmake
+-- Symlinking: /home/kylor/setup/INF3995-Templates/project_ws/src/install/ros_gz_example_description/share/ros_gz_example_description/package.xml
