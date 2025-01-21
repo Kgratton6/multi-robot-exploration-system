@@ -1,0 +1,53 @@
+# Ignorer les fichiers et répertoires de build générés
+robot/build/
+robot/src/build/
+robot/install/
+robot/log/
+
+# Ignorer les fichiers spécifiques à CMake
+*.cmake
+CMakeFiles/
+CMakeCache.txt
+Makefile
+CTestTestfile.cmake
+CTestConfiguration.ini
+cmake_install.cmake
+colcon_command_prefix_build.sh*
+ament_cmake_*/**
+
+# Ignorer les fichiers de configuration et de cache
+*.log
+*.dsv
+*.env
+*.json
+*.txt
+
+# Ignorer les fichiers Python compilés
+**/__pycache__/
+*.pyc
+
+# Ignorer les fichiers spécifiques à l'utilisateur ou au système
+*.sh
+*.ps1
+*.zsh
+*.bash
+
+# Ignorer les fichiers manifest d'installation
+install_manifest.txt
+symlink_install_manifest.txt
+ament_cmake_symlink_install/
+ament_cmake_uninstall_target/
+
+# Fichiers spécifiques au logger
+logger_all.log
+streams.log
+stdout.log
+stderr.log
+stdout_stderr.log
+command.log
+events.log
+# Ignorer les fichiers générés par CMake
+build/
+*.cache
+*.lock
+*.log
