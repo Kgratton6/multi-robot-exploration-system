@@ -2,3 +2,5 @@ robot/build/
 robot/src/build/
 robot/src/log/
 robot/log/
+robot/install
+robot/src/install/
