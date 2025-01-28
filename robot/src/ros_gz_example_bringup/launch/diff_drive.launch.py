@@ -25,8 +25,6 @@ from launch.substitutions import LaunchConfiguration, PathJoinSubstitution
 
 from launch_ros.actions import Node
 
-print("123 test ---------------------------")
-
 def generate_launch_description():
     # Configure ROS nodes for launch
 
