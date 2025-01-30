@@ -19,6 +19,7 @@ export class MissionService implements OnModuleInit {
         response.send({ success: true, message: 'Mission acceptée!' });
       }
     );
+    
 
     rclnodejs.spin(this.node);
     console.log('Service ROS2 "send_mission" est prêt!');
