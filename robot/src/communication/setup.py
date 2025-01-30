@@ -1,6 +1,6 @@
 from setuptools import find_packages, setup
 
-package_name = 'ros_gz_peripherals'
+package_name = 'communication'
 
 setup(
     name=package_name,
@@ -14,14 +14,12 @@ setup(
     install_requires=['setuptools'],
     zip_safe=True,
     maintainer='kevin',
-    maintainer_email='kevin@todo.todo',
+    maintainer_email='kevin-santaigo.gratton-fournier@polymtl.ca',
     description='TODO: Package description',
     license='TODO: License declaration',
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'led_controller = ros_gz_peripherals.led_controller_node:main', 
-            'sound_controller = ros_gz_peripherals.sound_controller_node:main', 
         ],
     },
 )

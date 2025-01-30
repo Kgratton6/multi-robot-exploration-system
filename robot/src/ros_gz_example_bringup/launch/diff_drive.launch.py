@@ -26,7 +26,6 @@ from launch.substitutions import LaunchConfiguration, PathJoinSubstitution
 from launch_ros.actions import Node
 
 def generate_launch_description():
-    # Configure ROS nodes for launch
 
     # Setup project paths
     pkg_project_bringup = get_package_share_directory('ros_gz_example_bringup')
@@ -62,14 +61,6 @@ def generate_launch_description():
         ]
     )
 
-    # Visualize in RViz
-    # rviz = Node(
-    #    package='rviz2',
-    #    executable='rviz2',
-    #    arguments=['-d', os.path.join(pkg_project_bringup, 'config', 'limo_diff_drive.rviz')],
-    #    condition=IfCondition(LaunchConfiguration('rviz'))
-    # )
-
     # Bridge ROS topics and Gazebo messages for establishing communication
     bridge = Node(
         package='ros_gz_bridge',
@@ -81,23 +72,18 @@ def generate_launch_description():
         output='screen'
     )
 
-    # teleop_keyboard = Node(
-    #     package='teleop_twist_keyboard',
-    #     executable='teleop_twist_keyboard',
-    #     name='teleop_twist_keyboard',
-    #     output='screen',
-    #     prefix='xterm -e',  # Opens the teleop node in a new terminal window
-    #     parameters=[{'use_sim_time': True}],
-    #     remappings=[
-    #         ('/cmd_vel', '/cmd_vel')  # Ensure the topic matches your robot's velocity command topic
-    #     ]
-    # )
-
     return LaunchDescription([
         gz_sim,
-        # DeclareLaunchArgument('rviz', default_value='true', description='Open RViz.'),
         bridge,
         robot_state_publisher,
-        # teleop_keyboard
-        # rviz
+        DeclareLaunchArgument('robot_speed', default_value='0.5', description='Speed of the robot'),
+
+        Node(
+            package='control',
+            executable='move_controller',
+            name='move_controller',
+            output='screen',
+            parameters=[{'speed': LaunchConfiguration('robot_speed')}],
+            remappings=[('/cmd_vel', '/cmd_vel')]
+        ),
     ])

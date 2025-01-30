@@ -18,6 +18,7 @@
 
   <depend>ros_gz_example_description</depend>
   <depend>ros_gz_example_gazebo</depend>
+  <depend>ros_gz_launch</depend>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
 
