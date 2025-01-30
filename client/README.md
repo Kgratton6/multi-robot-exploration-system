@@ -1,59 +1,129 @@
-# ClientApp
+# Frontend Application - Système Multi-Robot
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.5.
+## Architecture
 
-## Development server
+L'application est construite avec Angular 19 et utilise l'architecture suivante :
 
-To start a local development server, run:
+### Core Components
 
-```bash
-ng serve
-```
+- `DashboardComponent` : Interface principale pour le contrôle des robots et la visualisation de la carte
+- `MissionHistoryComponent` : Historique des missions avec détails et statistiques
+- `ConfigurationComponent` : Configuration des modes de roues et autres paramètres
+- `NavbarComponent` : Navigation principale de l'application
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+### Services
 
-## Code scaffolding
+- `WebSocketService` : Gestion de la communication en temps réel avec le back-end
+- `RobotService` : Gestion des robots et de leurs états
+- `MissionService` : Gestion des missions et de leur historique
+- `NotificationService` : Système de notifications unifié
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+### Models
 
-```bash
-ng generate component component-name
-```
+- `Robot` : Interface décrivant la structure d'un robot et son état
+- `Mission` : Interface décrivant une mission et ses métadonnées
+- `WheelMode` : Type pour les différents modes de roues (Ackerman/Différentiel)
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+### Features
 
-```bash
-ng generate --help
-```
+- Communication en temps réel via WebSocket
+- Affichage de l'état des robots en direct
+- Historique des missions avec filtrage
+- Configuration des modes de roues
+- Support P2P entre robots
+- Interface responsive (mobile-friendly)
+- Gestion des erreurs centralisée
 
-## Building
+## Prérequis
 
-To build the project run:
+- Node.js (v18+)
+- npm ou yarn
+- Angular CLI 19+
 
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
+## Installation
 
 ```bash
-ng e2e
+# Installation des dépendances
+npm install
+
+# Démarrage en mode développement
+npm start
+
+# Build pour la production
+npm run build
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+## Structure des Dossiers
 
-## Additional Resources
+```
+src/
+├── app/
+│   ├── components/        # Composants de l'application
+│   ├── services/         # Services partagés
+│   ├── models/           # Interfaces et types
+│   ├── interceptors/     # Intercepteurs HTTP
+│   └── ...
+├── environments/         # Configuration par environnement
+├── assets/              # Ressources statiques
+└── styles.css           # Styles globaux
+```
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## Requis Implémentés
+
+### Requis Obligatoires
+- [x] R.F.1 - Identification des robots
+- [x] R.F.2 - Commandes de mission (démarrer/arrêter)
+- [x] R.F.3 - Affichage de l'état des robots
+- [x] R.F.4 - Navigation autonome
+- [x] R.F.5 - Évitement d'obstacles
+- [x] R.F.6 - Retour à la base
+- [x] R.F.7 - Gestion de la batterie
+- [x] R.F.8 - Cartographie
+- [x] R.F.9 - Affichage des positions
+- [x] R.F.10 - Interface Web responsive
+
+### Requis Optionnels Choisis
+- [x] R.F.15 - Modes de roues différents
+- [x] R.F.17 - Base de données des missions
+- [x] R.F.18 - Sauvegarde des cartes
+- [x] R.F.19 - Communication P2P
+
+## Conventions de Code
+
+Le projet suit les conventions de code Angular officielles et utilise :
+- ESLint pour le linting
+- Prettier pour le formatage
+- Angular Material pour les composants UI
+- RxJS pour la gestion des flux de données
+
+## Tests
+
+Les tests sont écrits avec Jasmine et peuvent être exécutés avec :
+
+```bash
+# Tests unitaires
+npm test
+
+# Tests end-to-end
+npm run e2e
+```
+
+## Conteneurisation
+
+L'application est conteneurisée avec Docker. Pour construire et exécuter :
+
+```bash
+# Build de l'image
+docker build -t robot-frontend .
+
+# Exécution du conteneur
+docker run -p 80:80 robot-frontend
+```
+
+## Communication avec le Back-end
+
+L'application communique avec le back-end via :
+- WebSocket pour les données en temps réel (état des robots, positions, etc.)
+- API REST pour les opérations CRUD (missions, configurations, etc.)
+
+Les URLs sont configurables dans les fichiers d'environnement.

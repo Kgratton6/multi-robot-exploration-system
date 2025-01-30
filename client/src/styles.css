@@ -1,4 +1,173 @@
 /* You can add global styles to this file, and also import other style files */
+@import '@angular/material/prebuilt-themes/indigo-pink.css';
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    background-color: #f5f5f5;
+    color: rgba(0, 0, 0, 0.87);
+    line-height: 1.5;
+}
+
+/* Utilitaires */
+.text-center {
+    text-align: center;
+}
+
+.mt-1 { margin-top: 0.25rem; }
+.mt-2 { margin-top: 0.5rem; }
+.mt-3 { margin-top: 1rem; }
+.mt-4 { margin-top: 1.5rem; }
+
+.mb-1 { margin-bottom: 0.25rem; }
+.mb-2 { margin-bottom: 0.5rem; }
+.mb-3 { margin-bottom: 1rem; }
+.mb-4 { margin-bottom: 1.5rem; }
+
+/* Styles des cartes Material */
+.mat-mdc-card {
+    margin-bottom: 1rem;
+    border-radius: 8px !important;
+}
+
+.mat-mdc-card-header {
+    padding: 1rem;
+}
+
+.mat-mdc-card-content {
+    padding: 0 1rem 1rem 1rem;
+}
+
+/* Styles des boutons Material */
+.mat-mdc-raised-button {
+    margin: 0.25rem;
+}
+
+/* Styles des tableaux Material */
+.mat-mdc-table {
+    width: 100%;
+    background: white;
+}
+
+.mat-mdc-header-cell {
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.mat-mdc-row:hover {
+    background: rgba(0, 0, 0, 0.04);
+}
+
+/* Styles des formulaires Material */
+.mat-mdc-form-field {
+    width: 100%;
+}
+
+/* Styles de scroll personnalisés */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #666;
+}
+
+/* Animation de transition */
+.fade-in {
+    animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Styles des toast/snackbar */
+.mat-mdc-snack-bar-container {
+    &.success-snackbar {
+        --mdc-snackbar-container-color: #43a047;
+        --mat-mdc-snack-bar-button-color: #fff;
+        --mdc-snackbar-supporting-text-color: #fff;
+    }
+
+    &.error-snackbar {
+        --mdc-snackbar-container-color: #d32f2f;
+        --mat-mdc-snack-bar-button-color: #fff;
+        --mdc-snackbar-supporting-text-color: #fff;
+    }
+
+    &.info-snackbar {
+        --mdc-snackbar-container-color: #1976d2;
+        --mat-mdc-snack-bar-button-color: #fff;
+        --mdc-snackbar-supporting-text-color: #fff;
+    }
+}
+
+/* Styles pour les overlay Material (modals, etc.) */
+.mat-mdc-dialog-container {
+    padding: 1rem !important;
+}
+
+.mat-mdc-dialog-title {
+    margin-bottom: 1rem !important;
+}
+
+/* Styles pour les badges de statut */
+.status-badge {
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.status-success { background-color: #e8f5e9; color: #2e7d32; }
+.status-warning { background-color: #fff3e0; color: #ef6c00; }
+.status-error { background-color: #ffebee; color: #c62828; }
+.status-info { background-color: #e3f2fd; color: #1976d2; }
+
+/* Styles pour les icônes d'état */
+.status-icon {
+    vertical-align: middle;
+    margin-right: 4px;
+}
+
+/* Media Queries pour la réactivité */
+@media (max-width: 600px) {
+    .mat-mdc-card {
+        margin: 0.5rem;
+    }
+
+    .mat-mdc-card-header {
+        padding: 0.75rem;
+    }
+
+    .mat-mdc-card-content {
+        padding: 0 0.75rem 0.75rem 0.75rem;
+    }
+}
