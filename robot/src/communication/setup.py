@@ -20,6 +20,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+            'communication_controller = communication.communication:main',
         ],
     },
 )
