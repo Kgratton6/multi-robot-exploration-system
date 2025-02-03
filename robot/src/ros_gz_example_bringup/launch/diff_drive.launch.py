@@ -86,4 +86,10 @@ def generate_launch_description():
             parameters=[{'speed': LaunchConfiguration('robot_speed')}],
             remappings=[('/cmd_vel', '/cmd_vel')]
         ),
+        Node(
+            package='communication',
+            executable='communication_controller',
+            name='communication_controller',
+            output='screen'
+        ),
     ])
