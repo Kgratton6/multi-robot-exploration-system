@@ -41,6 +41,12 @@ npm install
 # Build the Angular project
 ng build
 
+npm install
+
+npm ci
+
+ng serve
+
 # Confirm success
-echo "Environment setup complete. You can now run ng serve."
+echo "Environment setup complete. You can now run npm start."
 
