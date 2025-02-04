@@ -1,0 +1,110 @@
+.mission-history-container {
+    padding: 1rem;
+    height: calc(100vh - 64px);
+}
+
+.mat-mdc-card {
+    height: 100%;
+}
+
+.mat-mdc-card-content {
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 64px); /* Hauteur totale moins header */
+}
+
+.mission-table {
+    width: 100%;
+    min-width: 800px;
+}
+
+.mat-mdc-cell,
+.mat-mdc-header-cell {
+    padding: 0 1rem;
+}
+
+/* Styles pour le scroll horizontal sur petits écrans */
+.mat-mdc-card-content {
+    overflow-x: auto;
+}
+
+/* Styles pour les badges de statut */
+.status-badge {
+    padding: 0.25rem 0.75rem;
+    border-radius: 1rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.status-badge.completed {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+}
+
+.status-badge.ongoing {
+    background-color: #e3f2fd;
+    color: #1976d2;
+}
+
+.status-badge.aborted {
+    background-color: #ffebee;
+    color: #c62828;
+}
+
+/* Styles pour les boutons d'action */
+.mat-mdc-icon-button {
+    margin: 0 0.25rem;
+}
+
+/* Style pour les lignes du tableau */
+.mat-mdc-row:hover {
+    background-color: rgba(0, 0, 0, 0.04);
+}
+
+/* Responsive Design */
+@media (max-width: 960px) {
+    .mission-history-container {
+        padding: 0.5rem;
+    }
+
+    .mat-mdc-card-content {
+        padding: 0.5rem;
+    }
+}
+
+/* Style pour le paginateur */
+.mat-mdc-paginator {
+    margin-top: auto; /* Pousse le paginateur en bas */
+    border-top: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+/* Animation pour les boutons d'action */
+.mat-mdc-icon-button {
+    transition: transform 0.2s ease-in-out;
+}
+
+.mat-mdc-icon-button:hover:not([disabled]) {
+    transform: scale(1.1);
+}
+
+/* Style pour les boutons désactivés */
+.mat-mdc-icon-button[disabled] {
+    opacity: 0.5;
+}
+
+/* Style pour la colonne de distance */
+.mat-column-totalDistance {
+    text-align: right;
+}
+
+/* Style pour la colonne de durée */
+.mat-column-duration {
+    text-align: right;
+}
+
+/* Style pour l'en-tête du tableau */
+.mat-mdc-header-cell {
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.87);
+    background-color: #fafafa;
+}
