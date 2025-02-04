@@ -26,11 +26,13 @@ class CommunicationController(Node):
         super().__init__('communication_controller')
         self.subscription = self.create_subscription(String,'/messages',self.messages_callback,10)
         self.movement_publisher = self.create_publisher(String, '/movement', 10)
+
+        self.feedback_subscription = self.create_subscription(String, '/feedback', self.feedback_callback, 10)
+        self.server_feedback_publisher = self.create_publisher(String, '/server_feedback', 10)
         self.get_logger().info("CommunicationController ready")
 
     def messages_callback(self, msg):
         try:
-            
             # change to multiple topics 
             self.get_logger().info(f"Forwarding message to movement topic: {msg.data}")
             movement_msg = String()
@@ -39,6 +41,16 @@ class CommunicationController(Node):
                 
         except Exception as e:
             self.get_logger().error(f"Error processing message: {str(e)}")
+
+    def feedback_callback(self, msg):
+        try:
+            self.get_logger().info(f"Forwarding feedback to server: {msg.data}")
+            server_msg = String()
+            server_msg.data = msg.data
+            self.server_feedback_publisher.publish(server_msg)
+        except Exception as e:
+            self.get_logger().error(f"Error forwarding feedback: {str(e)}")
+
 
 def main(args=None):
     rclpy.init(args=args)
