@@ -44,7 +44,6 @@ class CommunicationController(Node):
 
     def feedback_callback(self, msg):
         try:
-            self.get_logger().info(f"Forwarding feedback to server: {msg.data}")
             server_msg = String()
             server_msg.data = msg.data
             self.server_feedback_publisher.publish(server_msg)

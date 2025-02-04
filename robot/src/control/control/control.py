@@ -93,10 +93,23 @@ class MoveController(Node):
             "position": self.current_position,
             "battery": self.battery_level
         }
-        feedback_msg = String()
-        feedback_msg.data = json.dumps(feedback)
-        self.feedback_publisher.publish(feedback_msg)
-        self.get_logger().info(f"Feedback published: {feedback_msg.data}")
+        # Convertit le feedback en chaîne JSON
+        new_feedback_str = json.dumps(feedback)
+
+        # Initialisation de self.last_feedback si elle n'existe pas encore
+        if not hasattr(self, 'last_feedback'):
+            self.last_feedback = ""
+
+        # Ne publie que si le nouveau feedback diffère du précédent
+        if new_feedback_str != self.last_feedback:
+            feedback_msg = String()
+            feedback_msg.data = new_feedback_str
+            self.feedback_publisher.publish(feedback_msg)
+            self.get_logger().info(f"Feedback published: {feedback_msg.data}")
+            # Met à jour la variable last_feedback
+            self.last_feedback = new_feedback_str
+        else:
+            self.get_logger().debug("Feedback unchanged, not publishing.")
 
 
 def main(args=None):
