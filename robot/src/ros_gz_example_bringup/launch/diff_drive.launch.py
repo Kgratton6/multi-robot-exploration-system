@@ -92,4 +92,10 @@ def generate_launch_description():
             name='communication_controller',
             output='screen'
         ),
+        Node(
+            package='identification',
+            executable='identify_node',
+            name='identify_node',
+            output='screen'
+        )
     ])
