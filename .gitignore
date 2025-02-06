@@ -1,6 +1,7 @@
 robot/build/
-robot/src/build/
-robot/src/log/
-robot/log/
 robot/install
-robot/src/install/
+robot/log/
+robot/src/limo_ros2/build/
+robot/src/limo_ros2/install/
+robot/src/limo_ros2/log/
+robot/.vscode/
