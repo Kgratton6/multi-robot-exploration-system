@@ -1,9 +1,21 @@
 {
     "python.autoComplete.extraPaths": [
+        "/home/kevin/INF3995-102/robot/install/voice_control/lib/python3.10/site-packages",
+        "/home/kevin/INF3995-102/robot/install/periferals/lib/python3.10/site-packages",
+        "/home/kevin/INF3995-102/robot/install/limo_msgs/local/lib/python3.10/dist-packages",
+        "/home/kevin/INF3995-102/robot/install/identification/lib/python3.10/site-packages",
+        "/home/kevin/INF3995-102/robot/install/control/lib/python3.10/site-packages",
+        "/home/kevin/INF3995-102/robot/install/communication/lib/python3.10/site-packages",
         "/opt/ros/humble/lib/python3.10/site-packages",
         "/opt/ros/humble/local/lib/python3.10/dist-packages"
     ],
     "python.analysis.extraPaths": [
+        "/home/kevin/INF3995-102/robot/install/voice_control/lib/python3.10/site-packages",
+        "/home/kevin/INF3995-102/robot/install/periferals/lib/python3.10/site-packages",
+        "/home/kevin/INF3995-102/robot/install/limo_msgs/local/lib/python3.10/dist-packages",
+        "/home/kevin/INF3995-102/robot/install/identification/lib/python3.10/site-packages",
+        "/home/kevin/INF3995-102/robot/install/control/lib/python3.10/site-packages",
+        "/home/kevin/INF3995-102/robot/install/communication/lib/python3.10/site-packages",
         "/opt/ros/humble/lib/python3.10/site-packages",
         "/opt/ros/humble/local/lib/python3.10/dist-packages"
     ]
