@@ -1,6 +1,6 @@
 source /opt/ros/humble/setup.bash
-source install/setup.bash
 colcon build --cmake-args -DBUILD_TESTING=ON
+source install/setup.bash
 
 export LIBGL_ALWAYS_SOFTWARE=1
 
