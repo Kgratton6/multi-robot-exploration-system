@@ -1,0 +1,21 @@
+[2.055s] Invoking command in '/home/kevin/INF3995-102/test/catkin_ws/src/limo_ros2/identification': PYTHONPATH=/home/kevin/INF3995-102/test/catkin_ws/build/identification/prefix_override:/usr/local/lib/python3.10/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/kevin/INF3995-102/test/catkin_ws/install/identification/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/identification build --build-base /home/kevin/INF3995-102/test/catkin_ws/build/identification/build install --record /home/kevin/INF3995-102/test/catkin_ws/build/identification/install.log --single-version-externally-managed install_data
+[2.377s] running egg_info
+[2.378s] writing ../../../build/identification/identification.egg-info/PKG-INFO
+[2.382s] writing dependency_links to ../../../build/identification/identification.egg-info/dependency_links.txt
+[2.382s] writing entry points to ../../../build/identification/identification.egg-info/entry_points.txt
+[2.382s] writing requirements to ../../../build/identification/identification.egg-info/requires.txt
+[2.382s] writing top-level names to ../../../build/identification/identification.egg-info/top_level.txt
+[2.385s] reading manifest file '../../../build/identification/identification.egg-info/SOURCES.txt'
+[2.386s] writing manifest file '../../../build/identification/identification.egg-info/SOURCES.txt'
+[2.387s] running build
+[2.387s] running build_py
+[2.387s] running install
+[2.388s] running install_lib
+[2.391s] running install_data
+[2.391s] running install_egg_info
+[2.393s] removing '/home/kevin/INF3995-102/test/catkin_ws/install/identification/lib/python3.10/site-packages/identification-0.0.0-py3.10.egg-info' (and everything under it)
+[2.394s] Copying ../../../build/identification/identification.egg-info to /home/kevin/INF3995-102/test/catkin_ws/install/identification/lib/python3.10/site-packages/identification-0.0.0-py3.10.egg-info
+[2.397s] running install_scripts
+[2.439s] Installing identify_node script to /home/kevin/INF3995-102/test/catkin_ws/install/identification/lib/identification
+[2.440s] writing list of installed files to '/home/kevin/INF3995-102/test/catkin_ws/build/identification/install.log'
+[2.490s] Invoked command in '/home/kevin/INF3995-102/test/catkin_ws/src/limo_ros2/identification' returned '0': PYTHONPATH=/home/kevin/INF3995-102/test/catkin_ws/build/identification/prefix_override:/usr/local/lib/python3.10/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/kevin/INF3995-102/test/catkin_ws/install/identification/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/identification build --build-base /home/kevin/INF3995-102/test/catkin_ws/build/identification/build install --record /home/kevin/INF3995-102/test/catkin_ws/build/identification/install.log --single-version-externally-managed install_data
