@@ -1,0 +1,52 @@
+[0.035s] Invoking command in '/home/kevin/INF3995-102/test/catkin_ws/build/limo_car': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/kevin/INF3995-102/test/catkin_ws/src/limo_ros2/limo_car -DCMAKE_INSTALL_PREFIX=/home/kevin/INF3995-102/test/catkin_ws/install/limo_car
+[0.498s] -- The C compiler identification is GNU 11.4.0
+[1.392s] -- The CXX compiler identification is GNU 11.4.0
+[1.974s] -- Detecting C compiler ABI info
+[2.247s] -- Detecting C compiler ABI info - done
+[2.259s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.262s] -- Detecting C compile features
+[2.263s] -- Detecting C compile features - done
+[2.270s] -- Detecting CXX compiler ABI info
+[2.576s] -- Detecting CXX compiler ABI info - done
+[2.585s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.586s] -- Detecting CXX compile features
+[2.587s] -- Detecting CXX compile features - done
+[2.604s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[2.818s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[2.994s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[5.856s] -- Added test 'flake8' to check Python code syntax and style conventions
+[5.857s] -- Added test 'lint_cmake' to check CMake code style
+[5.858s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[5.859s] -- Added test 'xmllint' to check XML markup files
+[5.861s] -- Configuring done
+[5.865s] -- Generating done
+[5.868s] -- Build files have been written to: /home/kevin/INF3995-102/test/catkin_ws/build/limo_car
+[5.875s] Invoked command in '/home/kevin/INF3995-102/test/catkin_ws/build/limo_car' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/kevin/INF3995-102/test/catkin_ws/src/limo_ros2/limo_car -DCMAKE_INSTALL_PREFIX=/home/kevin/INF3995-102/test/catkin_ws/install/limo_car
+[5.876s] Invoking command in '/home/kevin/INF3995-102/test/catkin_ws/build/limo_car': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/kevin/INF3995-102/test/catkin_ws/build/limo_car -- -j20 -l20
+[5.915s] Invoked command in '/home/kevin/INF3995-102/test/catkin_ws/build/limo_car' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/kevin/INF3995-102/test/catkin_ws/build/limo_car -- -j20 -l20
+[5.917s] Invoking command in '/home/kevin/INF3995-102/test/catkin_ws/build/limo_car': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/kevin/INF3995-102/test/catkin_ws/build/limo_car
+[5.925s] -- Install configuration: ""
+[5.925s] -- Installing: /home/kevin/INF3995-102/test/catkin_ws/install/limo_car/share/limo_car/launch
+[5.925s] -- Installing: /home/kevin/INF3995-102/test/catkin_ws/install/limo_car/share/limo_car/launch/display_ackermann.launch.py
+[5.926s] -- Installing: /home/kevin/INF3995-102/test/catkin_ws/install/limo_car/share/limo_car/launch/ackermann_gazebo.launch.py
+[5.927s] -- Installing: /home/kevin/INF3995-102/test/catkin_ws/install/limo_car/share/limo_car/launch/ackermann.launch.py
+[5.927s] -- Installing: /home/kevin/INF3995-102/test/catkin_ws/install/limo_car/share/limo_car/gazebo
+[5.927s] -- Installing: /home/kevin/INF3995-102/test/catkin_ws/install/limo_car/share/limo_car/gazebo/ackermann_with_sensor.xacro
+[5.928s] -- Installing: /home/kevin/INF3995-102/test/catkin_ws/install/limo_car/share/limo_car/gazebo/ackermann.xacro
+[5.929s] -- Installing: /home/kevin/INF3995-102/test/catkin_ws/install/limo_car/share/limo_car/gazebo/sensor.xacro
+[5.930s] -- Installing: /home/kevin/INF3995-102/test/catkin_ws/install/limo_car/share/limo_car/log
+[5.930s] -- Installing: /home/kevin/INF3995-102/test/catkin_ws/install/limo_car/share/limo_car/meshes
+[5.930s] -- Installing: /home/kevin/INF3995-102/test/catkin_ws/install/limo_car/share/limo_car/meshes/limo_base.stl
+[6.038s] -- Installing: /home/kevin/INF3995-102/test/catkin_ws/install/limo_car/share/limo_car/meshes/limo_base.dae
+[6.208s] -- Installing: /home/kevin/INF3995-102/test/catkin_ws/install/limo_car/share/limo_car/meshes/limo_wheel.stl
+[6.230s] -- Installing: /home/kevin/INF3995-102/test/catkin_ws/install/limo_car/share/limo_car/meshes/limo_wheel.dae
+[6.265s] -- Installing: /home/kevin/INF3995-102/test/catkin_ws/install/limo_car/share/limo_car/rviz
+[6.266s] -- Installing: /home/kevin/INF3995-102/test/catkin_ws/install/limo_car/share/limo_car/rviz/gazebo.rviz
+[6.266s] -- Installing: /home/kevin/INF3995-102/test/catkin_ws/install/limo_car/share/limo_car/rviz/urdf.rviz
+[6.267s] [31mCMake Error at cmake_install.cmake:46 (file):
+[6.270s]   file INSTALL cannot find
+[6.271s]   "/home/kevin/INF3995-102/test/catkin_ws/src/limo_ros2/limo_car/src": No
+[6.271s]   such file or directory.
+[6.271s] 
+[6.271s] [0m
+[6.275s] Invoked command in '/home/kevin/INF3995-102/test/catkin_ws/build/limo_car' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/kevin/INF3995-102/test/catkin_ws/build/limo_car

@@ -1,0 +1,6 @@
+[31mCMake Error at cmake_install.cmake:46 (file):
+  file INSTALL cannot find
+  "/home/kevin/INF3995-102/test/catkin_ws/src/limo_ros2/limo_car/src": No
+  such file or directory.
+
+[0m

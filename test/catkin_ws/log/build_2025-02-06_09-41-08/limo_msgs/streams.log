@@ -1,0 +1,23 @@
+[0.027s] Invoking command in '/home/kevin/INF3995-102/test/catkin_ws/build/limo_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/kevin/INF3995-102/test/catkin_ws/build/limo_msgs -- -j20 -l20
+[0.088s] [  3%] Built target limo_msgs__cpp
+[0.091s] [ 12%] Built target limo_msgs__rosidl_generator_c
+[0.111s] [ 12%] Built target ament_cmake_python_copy_limo_msgs
+[0.127s] [ 22%] Built target limo_msgs__rosidl_typesupport_introspection_c
+[0.128s] [ 32%] Built target limo_msgs__rosidl_typesupport_fastrtps_c
+[0.128s] [ 41%] Built target limo_msgs__rosidl_typesupport_fastrtps_cpp
+[0.141s] [ 51%] Built target limo_msgs__rosidl_typesupport_introspection_cpp
+[0.141s] [ 61%] Built target limo_msgs__rosidl_typesupport_c
+[0.142s] [ 70%] Built target limo_msgs__rosidl_typesupport_cpp
+[0.166s] [ 70%] Built target limo_msgs
+[0.188s] [ 74%] Built target limo_msgs__py
+[0.211s] [ 80%] Built target limo_msgs__rosidl_generator_py
+[0.237s] [ 87%] Built target limo_msgs__rosidl_typesupport_introspection_c__pyext
+[0.238s] [ 93%] Built target limo_msgs__rosidl_typesupport_fastrtps_c__pyext
+[0.238s] [100%] Built target limo_msgs__rosidl_typesupport_c__pyext
+[0.424s] running egg_info
+[0.425s] writing limo_msgs.egg-info/PKG-INFO
+[0.425s] writing dependency_links to limo_msgs.egg-info/dependency_links.txt
+[0.426s] writing top-level names to limo_msgs.egg-info/top_level.txt
+[0.428s] reading manifest file 'limo_msgs.egg-info/SOURCES.txt'
+[0.429s] writing manifest file 'limo_msgs.egg-info/SOURCES.txt'
+[0.462s] [100%] Built target ament_cmake_python_build_limo_msgs_egg

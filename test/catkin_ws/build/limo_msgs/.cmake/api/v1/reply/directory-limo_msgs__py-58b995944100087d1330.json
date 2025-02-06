@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "limo_msgs__py",
+		"source" : "/home/kevin/INF3995-102/test/catkin_ws/build/limo_msgs/limo_msgs__py"
+	}
+}

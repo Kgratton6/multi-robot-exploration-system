@@ -1,0 +1,31 @@
+running egg_info
+creating ../../../build/periferals/periferals.egg-info
+writing ../../../build/periferals/periferals.egg-info/PKG-INFO
+writing dependency_links to ../../../build/periferals/periferals.egg-info/dependency_links.txt
+writing entry points to ../../../build/periferals/periferals.egg-info/entry_points.txt
+writing requirements to ../../../build/periferals/periferals.egg-info/requires.txt
+writing top-level names to ../../../build/periferals/periferals.egg-info/top_level.txt
+writing manifest file '../../../build/periferals/periferals.egg-info/SOURCES.txt'
+reading manifest file '../../../build/periferals/periferals.egg-info/SOURCES.txt'
+writing manifest file '../../../build/periferals/periferals.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/kevin/INF3995-102/test/catkin_ws/build/periferals/build
+creating /home/kevin/INF3995-102/test/catkin_ws/build/periferals/build/lib
+creating /home/kevin/INF3995-102/test/catkin_ws/build/periferals/build/lib/periferals
+copying periferals/__init__.py -> /home/kevin/INF3995-102/test/catkin_ws/build/periferals/build/lib/periferals
+running install
+running install_lib
+creating /home/kevin/INF3995-102/test/catkin_ws/install/periferals/lib/python3.10/site-packages/periferals
+copying /home/kevin/INF3995-102/test/catkin_ws/build/periferals/build/lib/periferals/__init__.py -> /home/kevin/INF3995-102/test/catkin_ws/install/periferals/lib/python3.10/site-packages/periferals
+byte-compiling /home/kevin/INF3995-102/test/catkin_ws/install/periferals/lib/python3.10/site-packages/periferals/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /home/kevin/INF3995-102/test/catkin_ws/install/periferals/share/ament_index
+creating /home/kevin/INF3995-102/test/catkin_ws/install/periferals/share/ament_index/resource_index
+creating /home/kevin/INF3995-102/test/catkin_ws/install/periferals/share/ament_index/resource_index/packages
+copying resource/periferals -> /home/kevin/INF3995-102/test/catkin_ws/install/periferals/share/ament_index/resource_index/packages
+copying package.xml -> /home/kevin/INF3995-102/test/catkin_ws/install/periferals/share/periferals
+running install_egg_info
+Copying ../../../build/periferals/periferals.egg-info to /home/kevin/INF3995-102/test/catkin_ws/install/periferals/lib/python3.10/site-packages/periferals-0.0.0-py3.10.egg-info
+running install_scripts
+writing list of installed files to '/home/kevin/INF3995-102/test/catkin_ws/build/periferals/install.log'
