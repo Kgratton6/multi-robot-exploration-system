@@ -4,15 +4,15 @@ source /opt/ros/humble/setup.bash
 # Install necessary ROS 2 packages
 sudo apt-get install -y ros-humble-joint-state-publisher-gui ros-humble-rqt-robot-steering
 
-# Install YDLidar SDK
+# Install YDLidar SDK (MAKE SURE TO BE OUT OF THE GIT REPOSITORY)
 git clone https://github.com/YDLIDAR/YDLidar-SDK.git
-mkdir -p YDLidar-SDK/build
-cd YDLidar-SDK/build
-cmake ..
-make
-sudo make install
-cd ../..
-rm -rf YDLidar-SDK
+mkdir -p YDLidar-SDK/build && \
+cd YDLidar-SDK/build &&\
+cmake ..&&\
+make &&\
+sudo make install &&\
+cd .. &&\
+cd .. && rm -rf YDLidar-SDK
 
 # Build the project
 sudo cp -r /opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs /usr/local/include/
