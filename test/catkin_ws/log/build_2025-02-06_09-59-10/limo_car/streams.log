@@ -1,0 +1,43 @@
+[1.067s] Invoking command in '/home/kevin/INF3995-102/test/catkin_ws/build/limo_car': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kevin/INF3995-102/test/catkin_ws/install/periferals:/home/kevin/INF3995-102/test/catkin_ws/install/identification:/home/kevin/INF3995-102/test/catkin_ws/install/control:/home/kevin/INF3995-102/test/catkin_ws/install/communication:/opt/ros/humble /usr/bin/cmake --build /home/kevin/INF3995-102/test/catkin_ws/build/limo_car -- -j20 -l20
+[1.446s] Invoked command in '/home/kevin/INF3995-102/test/catkin_ws/build/limo_car' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kevin/INF3995-102/test/catkin_ws/install/periferals:/home/kevin/INF3995-102/test/catkin_ws/install/identification:/home/kevin/INF3995-102/test/catkin_ws/install/control:/home/kevin/INF3995-102/test/catkin_ws/install/communication:/opt/ros/humble /usr/bin/cmake --build /home/kevin/INF3995-102/test/catkin_ws/build/limo_car -- -j20 -l20
+[1.449s] Invoking command in '/home/kevin/INF3995-102/test/catkin_ws/build/limo_car': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kevin/INF3995-102/test/catkin_ws/install/periferals:/home/kevin/INF3995-102/test/catkin_ws/install/identification:/home/kevin/INF3995-102/test/catkin_ws/install/control:/home/kevin/INF3995-102/test/catkin_ws/install/communication:/opt/ros/humble /usr/bin/cmake --install /home/kevin/INF3995-102/test/catkin_ws/build/limo_car
+[1.503s] -- Install configuration: ""
+[1.503s] -- Up-to-date: /home/kevin/INF3995-102/test/catkin_ws/install/limo_car/share/limo_car/launch
+[1.503s] -- Up-to-date: /home/kevin/INF3995-102/test/catkin_ws/install/limo_car/share/limo_car/launch/display_ackermann.launch.py
+[1.504s] -- Up-to-date: /home/kevin/INF3995-102/test/catkin_ws/install/limo_car/share/limo_car/launch/ackermann_gazebo.launch.py
+[1.504s] -- Up-to-date: /home/kevin/INF3995-102/test/catkin_ws/install/limo_car/share/limo_car/launch/ackermann.launch.py
+[1.504s] -- Up-to-date: /home/kevin/INF3995-102/test/catkin_ws/install/limo_car/share/limo_car/gazebo
+[1.504s] -- Up-to-date: /home/kevin/INF3995-102/test/catkin_ws/install/limo_car/share/limo_car/gazebo/ackermann_with_sensor.xacro
+[1.504s] -- Up-to-date: /home/kevin/INF3995-102/test/catkin_ws/install/limo_car/share/limo_car/gazebo/ackermann.xacro
+[1.504s] -- Up-to-date: /home/kevin/INF3995-102/test/catkin_ws/install/limo_car/share/limo_car/gazebo/sensor.xacro
+[1.505s] -- Up-to-date: /home/kevin/INF3995-102/test/catkin_ws/install/limo_car/share/limo_car/log
+[1.505s] -- Up-to-date: /home/kevin/INF3995-102/test/catkin_ws/install/limo_car/share/limo_car/meshes
+[1.505s] -- Up-to-date: /home/kevin/INF3995-102/test/catkin_ws/install/limo_car/share/limo_car/meshes/limo_base.stl
+[1.505s] -- Up-to-date: /home/kevin/INF3995-102/test/catkin_ws/install/limo_car/share/limo_car/meshes/limo_base.dae
+[1.505s] -- Up-to-date: /home/kevin/INF3995-102/test/catkin_ws/install/limo_car/share/limo_car/meshes/limo_wheel.stl
+[1.506s] -- Up-to-date: /home/kevin/INF3995-102/test/catkin_ws/install/limo_car/share/limo_car/meshes/limo_wheel.dae
+[1.506s] -- Up-to-date: /home/kevin/INF3995-102/test/catkin_ws/install/limo_car/share/limo_car/rviz
+[1.506s] -- Up-to-date: /home/kevin/INF3995-102/test/catkin_ws/install/limo_car/share/limo_car/rviz/gazebo.rviz
+[1.506s] -- Up-to-date: /home/kevin/INF3995-102/test/catkin_ws/install/limo_car/share/limo_car/rviz/urdf.rviz
+[1.519s] -- Up-to-date: /home/kevin/INF3995-102/test/catkin_ws/install/limo_car/share/limo_car/src
+[1.519s] -- Up-to-date: /home/kevin/INF3995-102/test/catkin_ws/install/limo_car/share/limo_car/urdf
+[1.520s] -- Up-to-date: /home/kevin/INF3995-102/test/catkin_ws/install/limo_car/share/limo_car/urdf/limo_steering_hinge.xacro
+[1.520s] -- Up-to-date: /home/kevin/INF3995-102/test/catkin_ws/install/limo_car/share/limo_car/urdf/limo_anteil.xacro
+[1.520s] -- Up-to-date: /home/kevin/INF3995-102/test/catkin_ws/install/limo_car/share/limo_car/urdf/limo_ackerman_base.xacro
+[1.520s] -- Up-to-date: /home/kevin/INF3995-102/test/catkin_ws/install/limo_car/share/limo_car/worlds
+[1.520s] -- Up-to-date: /home/kevin/INF3995-102/test/catkin_ws/install/limo_car/share/ament_index/resource_index/package_run_dependencies/limo_car
+[1.521s] -- Up-to-date: /home/kevin/INF3995-102/test/catkin_ws/install/limo_car/share/ament_index/resource_index/parent_prefix_path/limo_car
+[1.521s] -- Up-to-date: /home/kevin/INF3995-102/test/catkin_ws/install/limo_car/share/limo_car/environment/ament_prefix_path.sh
+[1.521s] -- Up-to-date: /home/kevin/INF3995-102/test/catkin_ws/install/limo_car/share/limo_car/environment/ament_prefix_path.dsv
+[1.521s] -- Up-to-date: /home/kevin/INF3995-102/test/catkin_ws/install/limo_car/share/limo_car/environment/path.sh
+[1.522s] -- Up-to-date: /home/kevin/INF3995-102/test/catkin_ws/install/limo_car/share/limo_car/environment/path.dsv
+[1.522s] -- Up-to-date: /home/kevin/INF3995-102/test/catkin_ws/install/limo_car/share/limo_car/local_setup.bash
+[1.522s] -- Up-to-date: /home/kevin/INF3995-102/test/catkin_ws/install/limo_car/share/limo_car/local_setup.sh
+[1.522s] -- Up-to-date: /home/kevin/INF3995-102/test/catkin_ws/install/limo_car/share/limo_car/local_setup.zsh
+[1.522s] -- Up-to-date: /home/kevin/INF3995-102/test/catkin_ws/install/limo_car/share/limo_car/local_setup.dsv
+[1.523s] -- Installing: /home/kevin/INF3995-102/test/catkin_ws/install/limo_car/share/limo_car/package.dsv
+[1.523s] -- Up-to-date: /home/kevin/INF3995-102/test/catkin_ws/install/limo_car/share/ament_index/resource_index/packages/limo_car
+[1.523s] -- Up-to-date: /home/kevin/INF3995-102/test/catkin_ws/install/limo_car/share/limo_car/cmake/limo_carConfig.cmake
+[1.523s] -- Up-to-date: /home/kevin/INF3995-102/test/catkin_ws/install/limo_car/share/limo_car/cmake/limo_carConfig-version.cmake
+[1.524s] -- Up-to-date: /home/kevin/INF3995-102/test/catkin_ws/install/limo_car/share/limo_car/package.xml
+[1.524s] Invoked command in '/home/kevin/INF3995-102/test/catkin_ws/build/limo_car' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kevin/INF3995-102/test/catkin_ws/install/periferals:/home/kevin/INF3995-102/test/catkin_ws/install/identification:/home/kevin/INF3995-102/test/catkin_ws/install/control:/home/kevin/INF3995-102/test/catkin_ws/install/communication:/opt/ros/humble /usr/bin/cmake --install /home/kevin/INF3995-102/test/catkin_ws/build/limo_car

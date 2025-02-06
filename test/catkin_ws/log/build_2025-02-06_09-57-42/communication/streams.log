@@ -1,0 +1,37 @@
+[2.283s] Invoking command in '/home/kevin/INF3995-102/test/catkin_ws/src/limo_ros2/communication': PYTHONPATH=/home/kevin/INF3995-102/test/catkin_ws/build/communication/prefix_override:/usr/local/lib/python3.10/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/kevin/INF3995-102/test/catkin_ws/install/communication/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/communication build --build-base /home/kevin/INF3995-102/test/catkin_ws/build/communication/build install --record /home/kevin/INF3995-102/test/catkin_ws/build/communication/install.log --single-version-externally-managed install_data
+[2.611s] running egg_info
+[2.612s] creating ../../../build/communication/communication.egg-info
+[2.612s] writing ../../../build/communication/communication.egg-info/PKG-INFO
+[2.613s] writing dependency_links to ../../../build/communication/communication.egg-info/dependency_links.txt
+[2.613s] writing entry points to ../../../build/communication/communication.egg-info/entry_points.txt
+[2.614s] writing requirements to ../../../build/communication/communication.egg-info/requires.txt
+[2.614s] writing top-level names to ../../../build/communication/communication.egg-info/top_level.txt
+[2.614s] writing manifest file '../../../build/communication/communication.egg-info/SOURCES.txt'
+[2.616s] reading manifest file '../../../build/communication/communication.egg-info/SOURCES.txt'
+[2.617s] writing manifest file '../../../build/communication/communication.egg-info/SOURCES.txt'
+[2.617s] running build
+[2.617s] running build_py
+[2.618s] creating /home/kevin/INF3995-102/test/catkin_ws/build/communication/build
+[2.618s] creating /home/kevin/INF3995-102/test/catkin_ws/build/communication/build/lib
+[2.618s] creating /home/kevin/INF3995-102/test/catkin_ws/build/communication/build/lib/communication
+[2.618s] copying communication/__init__.py -> /home/kevin/INF3995-102/test/catkin_ws/build/communication/build/lib/communication
+[2.619s] copying communication/communication.py -> /home/kevin/INF3995-102/test/catkin_ws/build/communication/build/lib/communication
+[2.619s] running install
+[2.619s] running install_lib
+[2.621s] creating /home/kevin/INF3995-102/test/catkin_ws/install/communication/lib/python3.10/site-packages/communication
+[2.621s] copying /home/kevin/INF3995-102/test/catkin_ws/build/communication/build/lib/communication/__init__.py -> /home/kevin/INF3995-102/test/catkin_ws/install/communication/lib/python3.10/site-packages/communication
+[2.621s] copying /home/kevin/INF3995-102/test/catkin_ws/build/communication/build/lib/communication/communication.py -> /home/kevin/INF3995-102/test/catkin_ws/install/communication/lib/python3.10/site-packages/communication
+[2.622s] byte-compiling /home/kevin/INF3995-102/test/catkin_ws/install/communication/lib/python3.10/site-packages/communication/__init__.py to __init__.cpython-310.pyc
+[2.622s] byte-compiling /home/kevin/INF3995-102/test/catkin_ws/install/communication/lib/python3.10/site-packages/communication/communication.py to communication.cpython-310.pyc
+[2.623s] running install_data
+[2.624s] creating /home/kevin/INF3995-102/test/catkin_ws/install/communication/share/ament_index
+[2.624s] creating /home/kevin/INF3995-102/test/catkin_ws/install/communication/share/ament_index/resource_index
+[2.624s] creating /home/kevin/INF3995-102/test/catkin_ws/install/communication/share/ament_index/resource_index/packages
+[2.624s] copying resource/communication -> /home/kevin/INF3995-102/test/catkin_ws/install/communication/share/ament_index/resource_index/packages
+[2.625s] copying package.xml -> /home/kevin/INF3995-102/test/catkin_ws/install/communication/share/communication
+[2.625s] running install_egg_info
+[2.627s] Copying ../../../build/communication/communication.egg-info to /home/kevin/INF3995-102/test/catkin_ws/install/communication/lib/python3.10/site-packages/communication-0.0.0-py3.10.egg-info
+[2.628s] running install_scripts
+[2.670s] Installing communication_controller script to /home/kevin/INF3995-102/test/catkin_ws/install/communication/lib/communication
+[2.670s] writing list of installed files to '/home/kevin/INF3995-102/test/catkin_ws/build/communication/install.log'
+[2.703s] Invoked command in '/home/kevin/INF3995-102/test/catkin_ws/src/limo_ros2/communication' returned '0': PYTHONPATH=/home/kevin/INF3995-102/test/catkin_ws/build/communication/prefix_override:/usr/local/lib/python3.10/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/kevin/INF3995-102/test/catkin_ws/install/communication/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/communication build --build-base /home/kevin/INF3995-102/test/catkin_ws/build/communication/build install --record /home/kevin/INF3995-102/test/catkin_ws/build/communication/install.log --single-version-externally-managed install_data

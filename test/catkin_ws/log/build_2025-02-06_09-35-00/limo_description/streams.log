@@ -1,0 +1,65 @@
+[0.105s] Invoking command in '/home/kevin/INF3995-102/test/catkin_ws/build/limo_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/kevin/INF3995-102/test/catkin_ws/src/limo_ros2/limo_description -DCMAKE_INSTALL_PREFIX=/home/kevin/INF3995-102/test/catkin_ws/install/limo_description
+[0.492s] -- The C compiler identification is GNU 11.4.0
+[1.601s] -- The CXX compiler identification is GNU 11.4.0
+[2.079s] -- Detecting C compiler ABI info
+[2.263s] -- Detecting C compiler ABI info - done
+[2.274s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.274s] -- Detecting C compile features
+[2.275s] -- Detecting C compile features - done
+[2.279s] -- Detecting CXX compiler ABI info
+[2.688s] -- Detecting CXX compiler ABI info - done
+[2.698s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.699s] -- Detecting CXX compile features
+[2.699s] -- Detecting CXX compile features - done
+[2.702s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[2.903s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[3.016s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[3.127s] -- Added test 'copyright' to check source files copyright and LICENSE
+[3.133s] -- Added test 'flake8' to check Python code syntax and style conventions
+[3.135s] -- Added test 'lint_cmake' to check CMake code style
+[3.137s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[3.139s] -- Added test 'xmllint' to check XML markup files
+[3.142s] -- Configuring done
+[3.147s] -- Generating done
+[3.149s] -- Build files have been written to: /home/kevin/INF3995-102/test/catkin_ws/build/limo_description
+[3.155s] Invoked command in '/home/kevin/INF3995-102/test/catkin_ws/build/limo_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/kevin/INF3995-102/test/catkin_ws/src/limo_ros2/limo_description -DCMAKE_INSTALL_PREFIX=/home/kevin/INF3995-102/test/catkin_ws/install/limo_description
+[3.157s] Invoking command in '/home/kevin/INF3995-102/test/catkin_ws/build/limo_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/kevin/INF3995-102/test/catkin_ws/build/limo_description -- -j20 -l20
+[3.198s] Invoked command in '/home/kevin/INF3995-102/test/catkin_ws/build/limo_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/kevin/INF3995-102/test/catkin_ws/build/limo_description -- -j20 -l20
+[3.210s] Invoking command in '/home/kevin/INF3995-102/test/catkin_ws/build/limo_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/kevin/INF3995-102/test/catkin_ws/build/limo_description
+[3.216s] -- Install configuration: ""
+[3.217s] -- Installing: /home/kevin/INF3995-102/test/catkin_ws/install/limo_description/share/limo_description/launch
+[3.217s] -- Installing: /home/kevin/INF3995-102/test/catkin_ws/install/limo_description/share/limo_description/launch/display_models_diff.launch.py
+[3.219s] -- Installing: /home/kevin/INF3995-102/test/catkin_ws/install/limo_description/share/limo_description/launch/gazebo_models_diff.launch.py
+[3.219s] -- Installing: /home/kevin/INF3995-102/test/catkin_ws/install/limo_description/share/limo_description/meshes
+[3.220s] -- Installing: /home/kevin/INF3995-102/test/catkin_ws/install/limo_description/share/limo_description/meshes/limo_base.stl
+[3.311s] -- Installing: /home/kevin/INF3995-102/test/catkin_ws/install/limo_description/share/limo_description/meshes/limo_base.dae
+[3.456s] -- Installing: /home/kevin/INF3995-102/test/catkin_ws/install/limo_description/share/limo_description/meshes/limo_wheel.stl
+[3.477s] -- Installing: /home/kevin/INF3995-102/test/catkin_ws/install/limo_description/share/limo_description/meshes/limo_wheel.dae
+[3.510s] -- Installing: /home/kevin/INF3995-102/test/catkin_ws/install/limo_description/share/limo_description/rviz
+[3.511s] -- Installing: /home/kevin/INF3995-102/test/catkin_ws/install/limo_description/share/limo_description/rviz/model_display.rviz
+[3.511s] -- Installing: /home/kevin/INF3995-102/test/catkin_ws/install/limo_description/share/limo_description/rviz/urdf.rviz
+[3.511s] -- Installing: /home/kevin/INF3995-102/test/catkin_ws/install/limo_description/share/limo_description/urdf
+[3.511s] -- Installing: /home/kevin/INF3995-102/test/catkin_ws/install/limo_description/share/limo_description/urdf/limo_four_diff.gazebo
+[3.512s] -- Installing: /home/kevin/INF3995-102/test/catkin_ws/install/limo_description/share/limo_description/urdf/limo_ackerman.gazebo
+[3.512s] -- Installing: /home/kevin/INF3995-102/test/catkin_ws/install/limo_description/share/limo_description/urdf/limo_xacro.xacro
+[3.513s] -- Installing: /home/kevin/INF3995-102/test/catkin_ws/install/limo_description/share/limo_description/urdf/limo_ackerman.xacro
+[3.513s] -- Installing: /home/kevin/INF3995-102/test/catkin_ws/install/limo_description/share/limo_description/urdf/limo_gazebo.gazebo
+[3.514s] -- Installing: /home/kevin/INF3995-102/test/catkin_ws/install/limo_description/share/limo_description/urdf/limo_steering_hinge.xacro
+[3.514s] -- Installing: /home/kevin/INF3995-102/test/catkin_ws/install/limo_description/share/limo_description/urdf/limo_four_diff.xacro
+[3.515s] -- Installing: /home/kevin/INF3995-102/test/catkin_ws/install/limo_description/share/limo_description/urdf/limo_four_diff_2.gazebo
+[3.515s] -- Installing: /home/kevin/INF3995-102/test/catkin_ws/install/limo_description/share/ament_index/resource_index/package_run_dependencies/limo_description
+[3.516s] -- Installing: /home/kevin/INF3995-102/test/catkin_ws/install/limo_description/share/ament_index/resource_index/parent_prefix_path/limo_description
+[3.516s] -- Installing: /home/kevin/INF3995-102/test/catkin_ws/install/limo_description/share/limo_description/environment/ament_prefix_path.sh
+[3.516s] -- Installing: /home/kevin/INF3995-102/test/catkin_ws/install/limo_description/share/limo_description/environment/ament_prefix_path.dsv
+[3.517s] -- Installing: /home/kevin/INF3995-102/test/catkin_ws/install/limo_description/share/limo_description/environment/path.sh
+[3.517s] -- Installing: /home/kevin/INF3995-102/test/catkin_ws/install/limo_description/share/limo_description/environment/path.dsv
+[3.517s] -- Installing: /home/kevin/INF3995-102/test/catkin_ws/install/limo_description/share/limo_description/local_setup.bash
+[3.518s] -- Installing: /home/kevin/INF3995-102/test/catkin_ws/install/limo_description/share/limo_description/local_setup.sh
+[3.518s] -- Installing: /home/kevin/INF3995-102/test/catkin_ws/install/limo_description/share/limo_description/local_setup.zsh
+[3.518s] -- Installing: /home/kevin/INF3995-102/test/catkin_ws/install/limo_description/share/limo_description/local_setup.dsv
+[3.518s] -- Installing: /home/kevin/INF3995-102/test/catkin_ws/install/limo_description/share/limo_description/package.dsv
+[3.519s] -- Installing: /home/kevin/INF3995-102/test/catkin_ws/install/limo_description/share/ament_index/resource_index/packages/limo_description
+[3.519s] -- Installing: /home/kevin/INF3995-102/test/catkin_ws/install/limo_description/share/limo_description/cmake/limo_descriptionConfig.cmake
+[3.519s] -- Installing: /home/kevin/INF3995-102/test/catkin_ws/install/limo_description/share/limo_description/cmake/limo_descriptionConfig-version.cmake
+[3.520s] -- Installing: /home/kevin/INF3995-102/test/catkin_ws/install/limo_description/share/limo_description/package.xml
+[3.522s] Invoked command in '/home/kevin/INF3995-102/test/catkin_ws/build/limo_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/kevin/INF3995-102/test/catkin_ws/build/limo_description

@@ -1,0 +1,33 @@
+[0.025s] Invoking command in '/home/kevin/INF3995-102/test/catkin_ws/build/limo_car': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/kevin/INF3995-102/test/catkin_ws/build/limo_car -- -j20 -l20
+[0.069s] Invoked command in '/home/kevin/INF3995-102/test/catkin_ws/build/limo_car' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/kevin/INF3995-102/test/catkin_ws/build/limo_car -- -j20 -l20
+[0.084s] Invoking command in '/home/kevin/INF3995-102/test/catkin_ws/build/limo_car': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/kevin/INF3995-102/test/catkin_ws/build/limo_car
+[0.102s] -- Install configuration: ""
+[0.102s] -- Up-to-date: /home/kevin/INF3995-102/test/catkin_ws/install/limo_car/share/limo_car/launch
+[0.102s] -- Up-to-date: /home/kevin/INF3995-102/test/catkin_ws/install/limo_car/share/limo_car/launch/display_ackermann.launch.py
+[0.102s] -- Up-to-date: /home/kevin/INF3995-102/test/catkin_ws/install/limo_car/share/limo_car/launch/ackermann_gazebo.launch.py
+[0.103s] -- Up-to-date: /home/kevin/INF3995-102/test/catkin_ws/install/limo_car/share/limo_car/launch/ackermann.launch.py
+[0.103s] -- Up-to-date: /home/kevin/INF3995-102/test/catkin_ws/install/limo_car/share/limo_car/gazebo
+[0.103s] -- Up-to-date: /home/kevin/INF3995-102/test/catkin_ws/install/limo_car/share/limo_car/gazebo/ackermann_with_sensor.xacro
+[0.103s] -- Up-to-date: /home/kevin/INF3995-102/test/catkin_ws/install/limo_car/share/limo_car/gazebo/ackermann.xacro
+[0.103s] -- Up-to-date: /home/kevin/INF3995-102/test/catkin_ws/install/limo_car/share/limo_car/gazebo/sensor.xacro
+[0.103s] -- Up-to-date: /home/kevin/INF3995-102/test/catkin_ws/install/limo_car/share/limo_car/log
+[0.103s] -- Up-to-date: /home/kevin/INF3995-102/test/catkin_ws/install/limo_car/share/limo_car/meshes
+[0.103s] -- Up-to-date: /home/kevin/INF3995-102/test/catkin_ws/install/limo_car/share/limo_car/meshes/limo_base.stl
+[0.103s] -- Up-to-date: /home/kevin/INF3995-102/test/catkin_ws/install/limo_car/share/limo_car/meshes/limo_base.dae
+[0.103s] -- Up-to-date: /home/kevin/INF3995-102/test/catkin_ws/install/limo_car/share/limo_car/meshes/limo_wheel.stl
+[0.103s] -- Up-to-date: /home/kevin/INF3995-102/test/catkin_ws/install/limo_car/share/limo_car/meshes/limo_wheel.dae
+[0.103s] -- Up-to-date: /home/kevin/INF3995-102/test/catkin_ws/install/limo_car/share/limo_car/rviz
+[0.103s] -- Up-to-date: /home/kevin/INF3995-102/test/catkin_ws/install/limo_car/share/limo_car/rviz/gazebo.rviz
+[0.103s] -- Up-to-date: /home/kevin/INF3995-102/test/catkin_ws/install/limo_car/share/limo_car/rviz/urdf.rviz
+[0.103s] -- Up-to-date: /home/kevin/INF3995-102/test/catkin_ws/install/limo_car/share/limo_car/src
+[0.104s] -- Up-to-date: /home/kevin/INF3995-102/test/catkin_ws/install/limo_car/share/limo_car/urdf
+[0.104s] -- Up-to-date: /home/kevin/INF3995-102/test/catkin_ws/install/limo_car/share/limo_car/urdf/limo_steering_hinge.xacro
+[0.104s] -- Up-to-date: /home/kevin/INF3995-102/test/catkin_ws/install/limo_car/share/limo_car/urdf/limo_anteil.xacro
+[0.104s] -- Up-to-date: /home/kevin/INF3995-102/test/catkin_ws/install/limo_car/share/limo_car/urdf/limo_ackerman_base.xacro
+[0.104s] [31mCMake Error at cmake_install.cmake:46 (file):
+[0.104s]   file INSTALL cannot find
+[0.104s]   "/home/kevin/INF3995-102/test/catkin_ws/src/limo_ros2/limo_car/worlds": No
+[0.104s]   such file or directory.
+[0.104s] 
+[0.104s] [0m
+[0.106s] Invoked command in '/home/kevin/INF3995-102/test/catkin_ws/build/limo_car' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/kevin/INF3995-102/test/catkin_ws/build/limo_car
