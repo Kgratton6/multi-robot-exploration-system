@@ -1,72 +1,55 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { BehaviorSubject, Observable, map } from 'rxjs';
+import { BehaviorSubject, Observable } from 'rxjs';
+import { RobotState } from '../models/robot.model';
 import { environment } from '../../environments/environment';
-import { Robot, RobotState, WheelMode } from '../models/robot.model';
-import { WebSocketService } from './websocket.service';
 
 @Injectable({
-    providedIn: 'root'
+  providedIn: 'root'
 })
 export class RobotService {
-    private robots$ = new BehaviorSubject<Robot[]>([]);
+  private robotsSubject = new BehaviorSubject<RobotState[]>([]);
+  private apiUrl = `${environment.apiUrl}/robots`;
 
-    constructor(
-        private http: HttpClient,
-        private wsService: WebSocketService
-    ) {
-        // Subscribe to robot state updates from WebSocket
-        this.wsService.getRobotStates().subscribe(states => {
-            const updatedRobots = states.map(state => ({
-                id: state.id,
-                name: `Robot ${state.id}`,
-                state: state
-            }));
-            this.robots$.next(updatedRobots);
-        });
-    }
+  constructor(private http: HttpClient) {
+    this.fetchRobotStates();
+  }
 
-    public getRobots(): Observable<Robot[]> {
-        return this.robots$.asObservable();
-    }
+  private fetchRobotStates(): void {
+    this.http.get<RobotState[]>(`${this.apiUrl}/states`).subscribe(states => {
+      this.robotsSubject.next(states);
+    });
+  }
 
-    public identifyRobot(robotId: string): void {
-        this.wsService.sendMessage('IDENTIFY_ROBOT', { robotId });
-    }
+  getRobots(): Observable<RobotState[]> {
+    return this.robotsSubject.asObservable();
+  }
 
-    public startMission(): void {
-        this.wsService.sendMessage('START_MISSION');
-    }
+  identifyRobot(robotId: string): Observable<void> {
+    return this.http.post<void>(`${this.apiUrl}/${robotId}/identify`, {});
+  }
 
-    public stopMission(): void {
-        this.wsService.sendMessage('STOP_MISSION');
-    }
+  startMission(robotIds: string[]): Observable<void> {
+    return this.http.post<void>(`${this.apiUrl}/mission/start`, { robotIds });
+  }
 
-    public returnToBase(): void {
-        this.wsService.sendMessage('RETURN_TO_BASE');
-    }
+  stopMission(robotIds: string[]): Observable<void> {
+    return this.http.post<void>(`${this.apiUrl}/mission/stop`, { robotIds });
+  }
 
-    public setWheelMode(robotId: string, mode: WheelMode): void {
-        this.wsService.sendMessage('SET_WHEEL_MODE', { robotId, mode });
-    }
+  returnToBase(robotIds: string[]): Observable<void> {
+    return this.http.post<void>(`${this.apiUrl}/mission/return`, { robotIds });
+  }
 
-    public enableP2P(): void {
-        this.wsService.sendMessage('ENABLE_P2P');
-    }
+  setWheelMode(robotId: string, mode: 'ackerman' | 'differential'): Observable<void> {
+    return this.http.post<void>(`${this.apiUrl}/${robotId}/wheel-mode`, { mode });
+  }
 
-    public disableP2P(): void {
-        this.wsService.sendMessage('DISABLE_P2P');
-    }
+  enableP2P(robotIds: string[]): Observable<void> {
+    return this.http.post<void>(`${this.apiUrl}/p2p/enable`, { robotIds });
+  }
 
-    public getRobotStatus(robotId: string): Observable<RobotState | undefined> {
-        return this.robots$.pipe(
-            map(robots => robots.find(robot => robot.id === robotId)?.state)
-        );
-    }
-
-    public getFarthestRobot(): Observable<Robot | undefined> {
-        return this.robots$.pipe(
-            map(robots => robots.find(robot => robot.state.isFarthest))
-        );
-    }
+  disableP2P(robotIds: string[]): Observable<void> {
+    return this.http.post<void>(`${this.apiUrl}/p2p/disable`, { robotIds });
+  }
 }
