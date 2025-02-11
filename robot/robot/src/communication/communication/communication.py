@@ -21,6 +21,8 @@ import json
 # rotation problem = normaly should rotate 360 degre, but does more like a 40 degre
 # ros2 topic pub /messages std_msgs/msg/String '{data: "{\"action\": \"move\", \"speed\": -0.2, \"duration\": 3.14}"}' -1
 # identifier : ros2 topic pub /identify std_msgs/msg/Empty "{}"
+# lancer la mission : ros2 topic pub /messages std_msgs/msg/String '{data: "{\"action\": \"start_mission\"}' -1
+# arreter la mission : ros2 topic pub /messages std_msgs/msg/String '{data: "{\"action\": \"end_mission\"}' -1
 
 class CommunicationController(Node):
 
