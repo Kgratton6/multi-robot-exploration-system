@@ -47,8 +47,8 @@ class MoveController(Node):
 
             elif command['action'] == 'start_mission':
                 twist = Twist()
-                twist.linear.x = 0
-                twist.angular.z = 1
+                twist.linear.x = 0.0
+                twist.angular.z = 1.0
                 self.publisher.publish(twist)
 
             elif command['action'] == 'end_mission':
