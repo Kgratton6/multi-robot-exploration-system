@@ -45,6 +45,15 @@ class MoveController(Node):
                 self.action_duration = command.get('duration', 0.0)
                 self.start_action_timer()
 
+            elif command['action'] == 'start_mission':
+                twist = Twist()
+                twist.linear.x = 0
+                twist.angular.z = 1
+                self.publisher.publish(twist)
+
+            elif command['action'] == 'end_mission':
+                self.stop()
+
             elif command['action'] == 'stop':
                 self.stop()
             else:
