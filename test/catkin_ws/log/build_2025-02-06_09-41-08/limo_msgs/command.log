@@ -1,1 +1,0 @@
-Invoking command in '/home/kevin/INF3995-102/test/catkin_ws/build/limo_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/kevin/INF3995-102/test/catkin_ws/build/limo_msgs -- -j20 -l20

@@ -1,6 +1,0 @@
-{
-  "package_name": "limo_msgs",
-  "non_idl_tuples": [
-    "/home/kevin/INF3995-102/test/catkin_ws/src/limo_ros2/limo_msgs:msg/LimoStatus.msg"
-  ]
-}
