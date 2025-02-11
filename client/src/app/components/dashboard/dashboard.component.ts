@@ -5,12 +5,14 @@ import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
 import { MatSelectModule } from '@angular/material/select';
 import { MatTooltipModule } from '@angular/material/tooltip';
+import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 import { FormsModule } from '@angular/forms';
 import { Subject, takeUntil } from 'rxjs';
 import { Robot, WheelMode } from '../../models/robot.model';
 import { RobotService } from '../../services/robot.service';
 import { MissionService } from '../../services/mission.service';
 import { NotificationService } from '../../services/notification.service';
+import { ConfirmationDialogComponent } from '../confirmation-dialog/confirmation-dialog.component';
 
 @Component({
     selector: 'app-dashboard',
@@ -22,7 +24,9 @@ import { NotificationService } from '../../services/notification.service';
         MatIconModule,
         MatSelectModule,
         MatTooltipModule,
-        FormsModule
+        MatDialogModule,
+        FormsModule,
+        // ConfirmationDialogComponent
     ],
     templateUrl: './dashboard.component.html',
     styleUrl: './dashboard.component.css'
@@ -36,7 +40,8 @@ export class DashboardComponent implements OnInit, OnDestroy {
     constructor(
         private robotService: RobotService,
         private missionService: MissionService,
-        private notificationService: NotificationService
+        private notificationService: NotificationService,
+        private dialog: MatDialog,
     ) {}
 
     ngOnInit() {
@@ -72,9 +77,18 @@ export class DashboardComponent implements OnInit, OnDestroy {
     }
 
     stopMission(): void {
-        this.robotService.stopMission();
-        this.missionService.endCurrentMission();
-        this.notificationService.missionEnded();
+        const dialogRef = this.dialog.open(ConfirmationDialogComponent, {
+            width: '400px',
+            data: { message: 'Êtes-vous sûr de vouloir arrêter la mission en cours ?' }
+        });
+
+        dialogRef.afterClosed().subscribe(result => {
+            if (result) {
+                this.robotService.stopMission();
+                this.missionService.endCurrentMission();
+                this.notificationService.missionEnded();
+            }
+        });
     }
 
     returnToBase(): void {
