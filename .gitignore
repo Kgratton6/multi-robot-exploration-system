@@ -1,6 +1,9 @@
-robot/build/
-robot/src/build/
-robot/src/log/
-robot/log/
-robot/install
-robot/src/install/
+robot/gazebo/build/
+robot/gazebo/install/
+robot/gazebo/log/
+robot/limo/build/
+robot/limo/install/
+robot/limo/log/
+robot/robot/build/
+robot/robot/install/
+robot/robot/log/
