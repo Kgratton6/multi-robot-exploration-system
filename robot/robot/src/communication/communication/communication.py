@@ -20,7 +20,7 @@ import json
 
 # rotation problem = normaly should rotate 360 degre, but does more like a 40 degre
 # ros2 topic pub /messages std_msgs/msg/String '{data: "{\"action\": \"move\", \"speed\": -0.2, \"duration\": 3.14}"}' -1
-# identifier : ros2 topic pub /identify std_msgs/msg/Empty "{}"
+# identifier : ros2 topic pub /identify std_msgs/msg/Empty "{}" -1
 # lancer la mission : ros2 topic pub /messages std_msgs/msg/String '{data: "{\"action\": \"start_mission\"}"}' -1
 # arreter la mission : ros2 topic pub /messages std_msgs/msg/String '{data: "{\"action\": \"end_mission\"}"}' -1
 
@@ -44,19 +44,17 @@ class CommunicationController(Node):
             action = data.get('action')
 
             if action == 'start_mission':
-                if not self.mission_active:
-                    self.mission_active = True
-                    self.get_logger().info(f"Started mission")
-                    movement_msg = String()
-                    movement_msg.data = msg.data
-                    self.movement_publisher.publish(movement_msg)
+                self.mission_active = True
+                self.get_logger().info(f"Started mission")
+                movement_msg = String()
+                movement_msg.data = msg.data
+                self.movement_publisher.publish(movement_msg)
 
             elif action == 'end_mission':
-                if self.mission_active:
-                    self.mission_active = False
-                    movement_msg = String()
-                    movement_msg.data = msg.data
-                    self.movement_publisher.publish(movement_msg)
+                self.mission_active = False
+                movement_msg = String()
+                movement_msg.data = msg.data
+                self.movement_publisher.publish(movement_msg)
             
             else :     
                 self.get_logger().info(f"Forwarding message to movement topic: {msg.data}")

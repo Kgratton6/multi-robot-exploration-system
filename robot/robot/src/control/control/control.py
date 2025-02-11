@@ -14,6 +14,7 @@ class MoveController(Node):
         
         self.current_action = None
         self.action_start_time = None
+        self.mission_active = False
         self.action_duration = 0
         self.current_speed = 0.0
         self.current_angular = 0.0
@@ -47,12 +48,14 @@ class MoveController(Node):
                 self.start_action_timer()
 
             elif command['action'] == 'start_mission':
-                twist = Twist()
-                twist.linear.x = 0.0
-                twist.angular.z = 1.0
-                self.publisher.publish(twist)
+                self._cancel_current_action()
+                self.current_speed = 0.0
+                self.current_angular = 1.0
+                self.action_duration = 3000
+                self.start_action_timer()
 
             elif command['action'] == 'end_mission':
+                self.mission_active = False  # Stop turning
                 self.stop()
 
             elif command['action'] == 'stop':
@@ -62,6 +65,13 @@ class MoveController(Node):
 
         except Exception as e:
             self.get_logger().error(f"Error processing movement command: {str(e)}")
+
+    def _mission_turn_loop(self):
+        if self.mission_active:
+            twist = Twist()
+            twist.linear.x = 0.0
+            twist.angular.z = 1.0  # Adjust for desired turning speed
+            self.publisher.publish(twist)
 
     def start_action_timer(self):
         self.action_start_time = self.get_clock().now()
