@@ -8,7 +8,8 @@ class MoveController(Node):
 
     def __init__(self):
         super().__init__('move_controller')
-        self.publisher = self.create_publisher(Twist, '/equipe-102/cmd_vel', 10)
+        #self.publisher = self.create_publisher(Twist, '/equipe-102/cmd_vel', 10)
+        self.publisher = self.create_publisher(Twist, '/cmd_vel', 10)
         self.movement_subscription = self.create_subscription(String, '/movement', self.movement_callback, 10)
         
         self.current_action = None
