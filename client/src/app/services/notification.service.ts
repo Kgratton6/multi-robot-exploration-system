@@ -18,4 +18,10 @@ export class NotificationService {
       duration: 3000
     });
   }
+
+  identifySignal(): void {
+    this.snackBar.open('Signal d\'identification envoyé', 'Fermer', {
+      duration: 3000
+    });
+  }
 }

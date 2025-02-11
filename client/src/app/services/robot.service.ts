@@ -18,4 +18,8 @@ export class RobotService {
   stopMission(): Observable<void> {
     return this.http.post<void>(`${this.apiUrl}/mission/stop`, {});
   }
+
+  identify(): Observable<void> {
+    return this.http.post<void>(`${this.apiUrl}/identify`, {});
+  }
 }

@@ -21,6 +21,7 @@ import { ConfirmationDialogComponent } from '../confirmation-dialog/confirmation
 })
 export class DashboardComponent {
     isMissionActive = false;
+    isIdentified = false;
 
     constructor(
         private robotService: RobotService,
@@ -45,9 +46,17 @@ export class DashboardComponent {
             if (result) {
                 this.robotService.stopMission().subscribe(() => {
                     this.isMissionActive = false;
+                    this.isIdentified = false;
                     this.notificationService.missionEnded();
                 });
             }
+        });
+    }
+
+    identify(): void {
+        this.robotService.identify().subscribe(() => {
+            this.isIdentified = true;
+            this.notificationService.identifySignal();
         });
     }
 }

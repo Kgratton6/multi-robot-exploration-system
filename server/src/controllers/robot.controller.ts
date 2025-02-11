@@ -18,4 +18,10 @@ export class RobotController {
     this.logger.log('Received request to stop mission');
     return await this.missionService.stopMission();
   }
+
+  @Post('identify')
+  async identify(): Promise<{ message: string }> {
+    this.logger.log('Received request to identify robot');
+    return await this.missionService.identify();
+  }
 }

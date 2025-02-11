@@ -52,4 +52,15 @@ export class MissionService {
 
     return { message: 'Mission ended' };
   }
+
+  async identify(): Promise<{ message: string }> {
+    await this.initPromise;
+    this.logger.log('Sending identify signal');
+
+    const identifyPublisher = this.node.createPublisher('std_msgs/msg/Empty', '/identify');
+    identifyPublisher.publish({});
+    this.logger.log('Published identify message');
+
+    return { message: 'Identification signal sent' };
+  }
 }
