@@ -14,7 +14,7 @@ class IdentifyNode(Node):
     def identify_callback(self, msg):
         self.get_logger().info("Identification demandée : lancement du son.")
         # Chemin absolu vers le fichier audio (adapté à votre installation)
-        sound_file = 'robot/common/sound/FARTReal_Pet 3 (ID 0241)_LS.wav'
+        sound_file = 'robot/common/son_identification.wav'
         if os.path.exists(sound_file):
             # Lancement de la commande pour jouer le son (ici, 'aplay' est utilisé pour Linux)
             subprocess.Popen(['aplay', sound_file])
