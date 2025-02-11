@@ -1,49 +1,55 @@
-import { Injectable } from '@nestjs/common';
+import { Injectable, Logger } from '@nestjs/common';
 import { Mission } from '../interfaces/mission.interface';
 import { v4 as uuidv4 } from 'uuid';
+import * as rclnodejs from 'rclnodejs';
 
 @Injectable()
 export class MissionService {
-    private missions: Map<string, Mission> = new Map();
-    private currentMission: Mission | null = null;
+  private readonly logger = new Logger(MissionService.name);
+  private missions: Map<string, Mission> = new Map();
+  private currentMission: Mission | null = null;
+  private node: any;
+  private publisher: any;
+  private initPromise: Promise<void>;
 
-    async startMission(robotIds: string[]): Promise<Mission> {
-        if (this.currentMission) {
-            throw new Error('A mission is already in progress');
-        }
+  constructor() { // le bon = 192.168
+    this.initPromise = rclnodejs.init()
+      .then(() => {
+        this.node = rclnodejs.createNode('mission_service_node');
+        this.publisher = this.node.createPublisher('std_msgs/msg/String', '/messages');
+        rclnodejs.spin(this.node);
+        this.logger.log('rclnodejs initialized and node is spinning');
+      })
+      .catch((err) => {
+        this.logger.error('Failed to initialize rclnodejs', err);
+      });
+  }
 
-        const mission: Mission = {
-            id: uuidv4(),
-            startTime: new Date().toISOString(),
-            status: 'ongoing',
-            robots: robotIds,
-            logs: []
-        };
+  async startMission(): Promise<{ message: string }> {
+    await this.initPromise;
+    this.logger.log('start mission');
 
-        this.currentMission = mission;
-        this.missions.set(mission.id, mission);
+    const message = {
+      data: JSON.stringify({ action: 'start_mission' }),
+    };
 
-        return mission;
-    }
+    this.publisher.publish(message);
+    this.logger.log('Published start_mission message');
 
-    async stopMission(robotIds: string[]): Promise<void> {
-        if (!this.currentMission) {
-            throw new Error('No mission in progress');
-        }
+    return { message: 'Mission started' };
+  }
 
-        // Terminer la mission si tous les robots sont arrêtés
-        const remainingActiveRobots = this.currentMission.robots.filter(
-            robotId => !robotIds.includes(robotId)
-        );
+  async stopMission(): Promise<{ message: string }> {
+    await this.initPromise;
+    this.logger.log('end mission');
 
-        if (remainingActiveRobots.length === 0) {
-            this.currentMission.status = 'completed';
-            this.currentMission.endTime = new Date().toISOString();
-            this.currentMission = null;
-        }
-    }
+    const message = {
+      data: JSON.stringify({ action: 'end_mission' }),
+    };
 
-    async getMissions(): Promise<Mission[]> {
-        return Array.from(this.missions.values());
-    }
+    this.publisher.publish(message);
+    this.logger.log('Published end_mission message');
+
+    return { message: 'Mission ended' };
+  }
 }

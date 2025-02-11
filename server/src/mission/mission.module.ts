@@ -1,12 +1,8 @@
 import { Module } from '@nestjs/common';
-import { MissionController } from './mission.controller';
 import { MissionService } from './mission.service';
-import { RobotGateway } from '../gateways/robot.gateway';
 
 @Module({
-    imports: [],
-    controllers: [MissionController],
-    providers: [MissionService, RobotGateway],
-    exports: [MissionService] // Exporté pour être utilisé par RobotSimulator
+  providers: [MissionService],  // Register MissionService
+  exports: [MissionService],    // Export MissionService to make it available in other modules
 })
 export class MissionModule {}

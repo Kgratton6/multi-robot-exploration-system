@@ -1,18 +1,21 @@
 import { Controller, Post, Logger } from '@nestjs/common';
+import { MissionService } from 'src/mission/mission.service';
 
 @Controller('robots')
 export class RobotController {
-    private readonly logger = new Logger(RobotController.name);
+  private readonly logger = new Logger(RobotController.name);
 
-    @Post('mission/start')
-    async startMission(): Promise<void> {
-        // Simulation de la commande ROS2
-        this.logger.log('Would execute: ros2 topic pub /messages std_msgs/msg/String \'{data: "{\\"action\\": \\"start_mission\\"}"}\' -1');
-    }
+  constructor(private readonly missionService: MissionService) {}
 
-    @Post('mission/stop')
-    async stopMission(): Promise<void> {
-        // Simulation de la commande ROS2
-        this.logger.log('Would execute: ros2 topic pub /messages std_msgs/msg/String \'{data: "{\\"action\\": \\"end_mission\\"}"}\' -1');
-    }
+  @Post('mission/start')
+  async startMission(): Promise<{ message: string }> {
+    this.logger.log('Received request to start mission');
+    return await this.missionService.startMission();
+  }
+
+  @Post('mission/stop')
+  async stopMission(): Promise<{ message: string }> {
+    this.logger.log('Received request to stop mission');
+    return await this.missionService.stopMission();
+  }
 }
