@@ -1,0 +1,2 @@
+Invoking command in '/home/kylor/INF3995-102/robot/build/ros_gz_example_application': /usr/bin/cmake /home/kylor/INF3995-102/robot/src/ros_gz_example_application -DBUILD_TESTING=ON -DCMAKE_INSTALL_PREFIX=/home/kylor/INF3995-102/robot/install/ros_gz_example_application
+Invoked command in '/home/kylor/INF3995-102/robot/build/ros_gz_example_application' returned '1': /usr/bin/cmake /home/kylor/INF3995-102/robot/src/ros_gz_example_application -DBUILD_TESTING=ON -DCMAKE_INSTALL_PREFIX=/home/kylor/INF3995-102/robot/install/ros_gz_example_application
