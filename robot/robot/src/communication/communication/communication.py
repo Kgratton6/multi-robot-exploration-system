@@ -28,7 +28,9 @@ class CommunicationController(Node):
 
     def __init__(self):
         super().__init__('communication_controller')
-        self.subscription = self.create_subscription(String,'/messages',self.messages_callback,10)
+        self.subscription = self.create_subscription(
+            String, '/robot102/messages', self.messages_callback, 10
+        )
         self.movement_publisher = self.create_publisher(String, '/movement', 10)
 
         self.feedback_subscription = self.create_subscription(String, '/feedback', self.feedback_callback, 10)
