@@ -16,7 +16,7 @@ def generate_launch_description():
         name='move_controller',
         output='screen',
         parameters=[{'speed': LaunchConfiguration('robot_speed')}],
-        remappings=[('/cmd_vel', '/equipe-102/cmd_vel')]
+        remappings=[('/cmd_vel', '/cmd_vel')]
     )
     communication_controller_node = Node(
         package='communication',
