@@ -52,7 +52,7 @@ def generate_launch_description():
             ('parameter_events', [LaunchConfiguration('id'), '/parameter_events']),
             ('rosout', [LaunchConfiguration('id'), '/rosout']),
             ('tf', [LaunchConfiguration('id'), '/tf']),
-        ]
+        ],
         parameters=[{
                 # 'use_sim_time': launch.substitutions.LaunchConfiguration('use_sim_time'),
                 'port_name': launch.substitutions.LaunchConfiguration('port_name'),                
