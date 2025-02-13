@@ -30,7 +30,7 @@ export class MissionService {
 
           // Création du noeud et du publisher pour l’identification
           const identificationNode = rclnodejs.createNode(`identification_service_node_${robotId}`);
-          const identificationPublisher = identificationNode.createPublisher('std_msgs/msg/String', `/${robotId}/messages`);
+          const identificationPublisher = identificationNode.createPublisher('std_msgs/msg/Empty', `/${robotId}/identify`);
           rclnodejs.spin(identificationNode);
           this.nodes.set(`${robotId}_identification`, identificationNode);
           this.publishers.set(`${robotId}_identification`, identificationPublisher);
