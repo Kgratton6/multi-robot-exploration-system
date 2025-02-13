@@ -37,6 +37,7 @@ def generate_launch_description():
         executable='identify_node',
         name='identify_node',
         output='screen',
+        parameters=[{'robot_id': LaunchConfiguration('id')}],
         remappings=[('/identify', [ '/', LaunchConfiguration('id'), '/identify'])]
     )
     

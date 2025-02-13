@@ -7,11 +7,11 @@ import os
 class IdentifyNode(Node):
     def __init__(self):
         super().__init__('identify_node')
-        self.declare_parameter('robot_id', 'robot1')
+        self.declare_parameter('robot_id', 'robot1_102')
         self.robot_id = self.get_parameter('robot_id').value
+    
         identify_topic = f'/{self.robot_id}/identify'
         self.subscription = self.create_subscription(Empty, identify_topic, self.identify_callback, 10)
-        self.get_logger().info(f"Identify node démarré pour {self.robot_id}, en attente sur {identify_topic}.")
 
     def identify_callback(self, msg):
         self.get_logger().info(f"Identification demandée pour {self.robot_id} : lancement du son.")
