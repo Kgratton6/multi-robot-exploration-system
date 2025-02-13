@@ -12,55 +12,48 @@ export class MissionService {
   private publisher: any;
   private initPromise: Promise<void>;
 
-  constructor() { // le bon = 192.168
+  constructor() {
     this.initPromise = rclnodejs.init()
       .then(() => {
         this.node = rclnodejs.createNode('mission_service_node');
         this.publisher = this.node.createPublisher('std_msgs/msg/String', '/messages');
         rclnodejs.spin(this.node);
-        this.logger.log('rclnodejs initialized and node is spinning');
+        this.logger.log('rclnodejs initialisé et node en exécution');
       })
       .catch((err) => {
-        this.logger.error('Failed to initialize rclnodejs', err);
+        this.logger.error('Échec de l’init de rclnodejs', err);
       });
   }
 
-  async startMission(): Promise<{ message: string }> {
+  async startMission(robotId: string): Promise<{ message: string }> {
     await this.initPromise;
-    this.logger.log('start mission');
-
+    this.logger.log(`Démarrage de la mission pour ${robotId}`);
     const message = {
-      data: JSON.stringify({ action: 'start_mission' }),
+      data: JSON.stringify({ action: 'start_mission', robot_id: robotId }),
     };
-
     this.publisher.publish(message);
-    this.logger.log('Published start_mission message');
-
-    return { message: 'Mission started' };
+    this.logger.log('Message start_mission publié');
+    return { message: `Mission démarrée pour ${robotId}` };
   }
 
-  async stopMission(): Promise<{ message: string }> {
+  async stopMission(robotId: string): Promise<{ message: string }> {
     await this.initPromise;
-    this.logger.log('end mission');
-
+    this.logger.log(`Arrêt de la mission pour ${robotId}`);
     const message = {
-      data: JSON.stringify({ action: 'end_mission' }),
+      data: JSON.stringify({ action: 'end_mission', robot_id: robotId }),
     };
-
     this.publisher.publish(message);
-    this.logger.log('Published end_mission message');
-
-    return { message: 'Mission ended' };
+    this.logger.log('Message end_mission publié');
+    return { message: `Mission arrêtée pour ${robotId}` };
   }
 
-  async identify(): Promise<{ message: string }> {
+  async identify(robotId: string): Promise<{ message: string }> {
     await this.initPromise;
-    this.logger.log('Sending identify signal');
-
-    const identifyPublisher = this.node.createPublisher('std_msgs/msg/Empty', '/identify');
+    this.logger.log(`Envoi du signal d’identification pour ${robotId}`);
+    const identifyTopic = `/${robotId}/identify`;
+    const identifyPublisher = this.node.createPublisher('std_msgs/msg/Empty', identifyTopic);
     identifyPublisher.publish({});
-    this.logger.log('Published identify message');
-
-    return { message: 'Identification signal sent' };
+    this.logger.log(`Message d’identification publié pour ${robotId}`);
+    return { message: `Signal d’identification envoyé pour ${robotId}` };
   }
 }
