@@ -42,7 +42,7 @@ def generate_launch_description():
         executable='limo_base',  #foxy executable='limo_base',
         output='screen',
         emulate_tty=True,
-        namespace=namespace_arg,
+        namespace=LaunchConfiguration('id'),
         parameters=[{
                 # 'use_sim_time': launch.substitutions.LaunchConfiguration('use_sim_time'),
                 'port_name': launch.substitutions.LaunchConfiguration('port_name'),                
@@ -57,6 +57,7 @@ def generate_launch_description():
         }])
 
     return LaunchDescription([
+        namespace_arg,
         # use_sim_time_arg,
         port_name_arg,        
         odom_frame_arg,
