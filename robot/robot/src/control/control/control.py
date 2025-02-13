@@ -8,37 +8,37 @@ class MoveController(Node):
 
     def __init__(self):
         super().__init__('move_controller')
-        # Déclaration et récupération du paramètre robot_id
-        self.declare_parameter('robot_id', 'robot1')
+        self.declare_parameter('robot_id', 'robot1_102')
         self.robot_id = self.get_parameter('robot_id').value
 
-        # Abonnement au topic de mouvement propre à ce robot
         movement_topic = f'/{self.robot_id}/movement'
-        self.movement_subscription = self.create_subscription(String, movement_topic, self.movement_callback, 10)
-        
-        # Publication sur le topic de commande de vitesse spécifique
+        self.movement_subscription = self.create_subscription(
+            String,
+            movement_topic,
+            self.movement_callback,
+            10
+        )
+
         cmd_vel_topic = f'/{self.robot_id}/cmd_vel'
         self.publisher = self.create_publisher(Twist, cmd_vel_topic, 10)
-        
+
+        self.feedback_publisher = self.create_publisher(String, '/feedback', 10)
+        self.feedback_timer = self.create_timer(1.0, self.publish_feedback)
+
         self.current_action = None
         self.action_start_time = None
         self.mission_active = False
         self.action_duration = 0
         self.current_speed = 0.0
         self.current_angular = 0.0
-
-        # Variables pour le feedback
         self.current_position = {"x": 0.0, "y": 0.0}
         self.battery_level = 100
-
-        self.feedback_publisher = self.create_publisher(String, '/feedback', 10)
-        self.feedback_timer = self.create_timer(1.0, self.publish_feedback)
 
     def movement_callback(self, msg):
         try:
             command = json.loads(msg.data)
             self.get_logger().info(f"Commande reçue sur {self.robot_id}: {command}")
-            
+
             if command['action'] == 'move':
                 self._cancel_current_action()
                 self.current_speed = command.get('speed', 0.0)
