@@ -22,8 +22,8 @@ import { RobotState } from '../../interfaces/robot-state.interface';
 })
 export class DashboardComponent {
     robotStates: { [key: string]: RobotState } = {
-        'robot1': { isMissionActive: false, isIdentified: false },
-        'robot2': { isMissionActive: false, isIdentified: false }
+        'robot1_102': { isMissionActive: false, isIdentified: false },
+        'robot2_102': { isMissionActive: false, isIdentified: false }
     };
 
     constructor(
