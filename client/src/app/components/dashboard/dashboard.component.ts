@@ -6,6 +6,7 @@ import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 import { RobotService } from '../../services/robot.service';
 import { NotificationService } from '../../services/notification.service';
 import { ConfirmationDialogComponent } from '../confirmation-dialog/confirmation-dialog.component';
+import { RobotState } from '../../interfaces/robot-state.interface';
 
 @Component({
     selector: 'app-dashboard',
@@ -20,8 +21,10 @@ import { ConfirmationDialogComponent } from '../confirmation-dialog/confirmation
     styleUrl: './dashboard.component.css'
 })
 export class DashboardComponent {
-    isMissionActive = false;
-    isIdentified = false;
+    robotStates: { [key: string]: RobotState } = {
+        'robot1': { isMissionActive: false, isIdentified: false },
+        'robot2': { isMissionActive: false, isIdentified: false }
+    };
 
     constructor(
         private robotService: RobotService,
@@ -29,33 +32,33 @@ export class DashboardComponent {
         private dialog: MatDialog,
     ) {}
 
-    startMission(): void {
-        this.robotService.startMission().subscribe(() => {
-            this.isMissionActive = true;
+    startMission(robotId: string): void {
+        this.robotService.startMission(robotId).subscribe(() => {
+            this.robotStates[robotId].isMissionActive = true;
             this.notificationService.missionStarted();
         });
     }
 
-    stopMission(): void {
+    stopMission(robotId: string): void {
         const dialogRef = this.dialog.open(ConfirmationDialogComponent, {
             width: '400px',
-            data: { message: 'Êtes-vous sûr de vouloir arrêter la mission en cours ?' }
+            data: { message: `Êtes-vous sûr de vouloir arrêter la mission en cours pour le robot ${robotId} ?` }
         });
 
         dialogRef.afterClosed().subscribe(result => {
             if (result) {
-                this.robotService.stopMission().subscribe(() => {
-                    this.isMissionActive = false;
-                    this.isIdentified = false;
+                this.robotService.stopMission(robotId).subscribe(() => {
+                    this.robotStates[robotId].isMissionActive = false;
+                    this.robotStates[robotId].isIdentified = false;
                     this.notificationService.missionEnded();
                 });
             }
         });
     }
 
-    identify(): void {
-        this.robotService.identify().subscribe(() => {
-            this.isIdentified = true;
+    identify(robotId: string): void {
+        this.robotService.identify(robotId).subscribe(() => {
+            this.robotStates[robotId].isIdentified = true;
             this.notificationService.identifySignal();
         });
     }

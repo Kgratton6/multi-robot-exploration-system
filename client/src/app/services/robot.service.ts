@@ -11,15 +11,15 @@ export class RobotService {
 
   constructor(private http: HttpClient) {}
 
-  startMission(): Observable<void> {
-    return this.http.post<void>(`${this.apiUrl}/mission/start`, {});
+  startMission(robotId: string): Observable<void> {
+    return this.http.post<void>(`${this.apiUrl}/${robotId}/mission/start`, {});
   }
 
-  stopMission(): Observable<void> {
-    return this.http.post<void>(`${this.apiUrl}/mission/stop`, {});
+  stopMission(robotId: string): Observable<void> {
+    return this.http.post<void>(`${this.apiUrl}/${robotId}/mission/stop`, {});
   }
 
-  identify(): Observable<void> {
-    return this.http.post<void>(`${this.apiUrl}/identify`, {});
+  identify(robotId: string): Observable<void> {
+    return this.http.post<void>(`${this.apiUrl}/${robotId}/identify`, {});
   }
 }
