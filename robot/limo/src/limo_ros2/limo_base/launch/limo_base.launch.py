@@ -10,8 +10,11 @@ from launch_ros.actions import Node
 
 
 def generate_launch_description():
-    # use_sim_time_arg = DeclareLaunchArgument('use_sim_time', default_value='false',
-    #                                          description='Use simulation clock if true')
+
+    namespace_arg = DeclareLaunchArgument(
+        'id', default_value='102robot1',
+        description='Namespace for the robot'
+    )
 
     port_name_arg = DeclareLaunchArgument('port_name', default_value='ttyTHS1',
                                          description='usb bus name, e.g. ttyTHS1')
@@ -39,6 +42,7 @@ def generate_launch_description():
         executable='limo_base',  #foxy executable='limo_base',
         output='screen',
         emulate_tty=True,
+        namespace=namespace_arg,
         parameters=[{
                 # 'use_sim_time': launch.substitutions.LaunchConfiguration('use_sim_time'),
                 'port_name': launch.substitutions.LaunchConfiguration('port_name'),                

@@ -17,6 +17,7 @@ def generate_launch_description():
         executable='move_controller',
         name='move_controller_robot1',
         output='screen',
+        nam
         parameters=[{'speed': LaunchConfiguration('robot_speed'), 'robot_id': 'robot1'}],
         remappings=[('/cmd_vel', '/robot1/cmd_vel')]
     )
