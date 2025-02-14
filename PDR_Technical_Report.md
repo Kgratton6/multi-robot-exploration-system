@@ -7,11 +7,21 @@
 ### 1.1 Architecture globale
 ```mermaid
 graph TD
-    A[Interface Web Angular] -->|WebSocket| B(Station au sol NestJS)
-    B -->|ROS2 Topics| C[Robot Limo 1]
-    B -->|ROS2 Topics| D[Robot Limo 2]
-    C <-->|P2P| D
-    B -->|Bridge ROS-Gazebo| E[Simulation]
+    %% Station Sol
+    subgraph "Station Sol"
+      A[Interface Web Angular] -->|WebSocket| B(API NestJS<br/>(Station au sol))
+      B --> C[PostgreSQL]
+      B -->|Bridge ROS-Gazebo| E[Simulation]
+    end
+
+    %% Réseau ROS2
+    subgraph "ROS2 Network"
+      D[Robot Limo 1] <-->|P2P| F[Robot Limo 2]
+    end
+
+    %% Connexions entre la station et les robots
+    B <-->|ROS2 Topics| D
+    B <-->|ROS2 Topics| F
 ```
 
 ### 1.2 Stack technique
