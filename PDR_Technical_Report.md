@@ -9,7 +9,7 @@
 graph TD
     %% Station Sol
     subgraph "Station Sol"
-      A[Interface Web Angular] -->|WebSocket| B(API NestJS<br/>(Station au sol))
+      A[Interface Web Angular] -->|WebSocket| B[API NestJS - Station au sol]
       B --> C[PostgreSQL]
       B -->|Bridge ROS-Gazebo| E[Simulation]
     end
