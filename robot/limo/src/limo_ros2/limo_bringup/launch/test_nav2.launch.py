@@ -11,11 +11,8 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-#
-# Author: Darby Lim
 
 import os
-
 from ament_index_python.packages import get_package_share_directory
 from launch import LaunchDescription
 from launch.actions import DeclareLaunchArgument
@@ -25,32 +22,36 @@ from launch.substitutions import LaunchConfiguration
 from launch_ros.actions import Node
 
 def generate_launch_description():
-    use_sim_time = LaunchConfiguration('use_sim_time', default='true')
-    namespace = LaunchConfiguration('namespace', default='limo2')
+    use_sim_time = LaunchConfiguration('use_sim_time', default='false')
     map_dir = LaunchConfiguration(
         'map',
         default=os.path.join(
-            get_package_share_directory('ros_gz_example_bringup'),
+            get_package_share_directory('limo_bringup'),
             'maps'))
 
-    
-    remappings = ['tf:=/tf', 'tf_static:=/tf_static']
-    param_file_name = 'nav2_config2.yaml'
+    param_file_name = 'nav2_test1.yaml'
     param_dir = LaunchConfiguration(
         'params_file',
         default=os.path.join(
-            get_package_share_directory('ros_gz_example_bringup'),
-            'config',
+            get_package_share_directory('limo_bringup'),
+            'param',
             param_file_name))
 
     nav2_launch_file_dir = os.path.join(get_package_share_directory('nav2_bringup'), 'launch')
 
-    return LaunchDescription([
-        DeclareLaunchArgument(
-            'namespace',
-            default_value='limo2',
-            description='Robot namespace'),
+    rviz_config_dir = os.path.join(
+        get_package_share_directory('nav2_bringup'),
+        'rviz',
+        'nav2_default_view.rviz')
 
+    id_arg = DeclareLaunchArgument(
+        'id',
+        default_value='limo1',
+        description='Namespace ID for the robot'
+    )
+
+    return LaunchDescription([
+        id_arg,
         DeclareLaunchArgument(
             'map',
             default_value=map_dir,
@@ -63,18 +64,30 @@ def generate_launch_description():
 
         DeclareLaunchArgument(
             'use_sim_time',
-            default_value='true',
+            default_value='false',
             description='Use simulation (Gazebo) clock if true'),
 
         IncludeLaunchDescription(
-            PythonLaunchDescriptionSource([nav2_launch_file_dir, '/bringup_launch.py']),
+            PythonLaunchDescriptionSource([get_package_share_directory('limo_bringup'), '/launch/bringup_launch.py']),
             launch_arguments={
-                'use_namespace': 'true',
-                'namespace': namespace,
                 'map': map_dir,
                 'use_sim_time': use_sim_time,
                 'params_file': param_dir,
-                'remappings': remappings,
-                }.items(),
+                'namespace': 'limo1',
+                'use_namespace': 'true',
+            }.items(),
+            #namespace='limo1'
         ),
+
+        Node(
+            package='rviz2',
+            executable='rviz2',
+            name='rviz2',
+            arguments=['-d', rviz_config_dir],
+            parameters=[{'use_sim_time': use_sim_time}],
+            output='screen',
+            remappings=[
+                #('/tf', 'tf'),
+                #('/tf_static', 'tf_static')
+            ]),
     ])

@@ -12,9 +12,9 @@ source install/setup.bash
 colcon build
 source install/setup.bash
 
-ros2 launch limo_bringup limo_start.launch.py pub_odom_tf:=false & sleep 10
+ros2 launch limo_bringup limo_start_test.py pub_odom_tf:=false id:=limo1 & sleep 10
 
-ros2 launch limo_bringup cartographer.launch.py & sleep 5
+ros2 launch limo_bringup test_cartographer.launch.py id:=limo1 & sleep 5
 
-ros2 launch limo_bringup navigation2.launch.py
+ros2 launch limo_bringup test_nav2.launch.py id:=limo1
 

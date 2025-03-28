@@ -37,26 +37,23 @@ def generate_launch_description():
     #                                                description='Whether running with simulator')
     sim_control_rate_arg = DeclareLaunchArgument('control_rate', default_value='50',
                                                  description='Simulation control loop update rate')
-                                                 
-    initial_yaw_offset_arg = DeclareLaunchArgument('initial_yaw_offset', default_value='0.0',
-                                                    description='Initial yaw offset in degrees (handled by client)')
     
     limo_base_node = launch_ros.actions.Node(
         package='limo_base',
         executable='limo_base',
         output='screen',
         emulate_tty=True,
-        #namespace="limo1",
-        #remappings=[
-         #    ('/cmd_vel', 'cmd_vel'),
-          #   ('/imu', 'imu'),
-           #  ('/limo_status', 'limo_status'),
-            # ('/odom', 'odom'),
-        #     ('/parameter_events', 'parameter_events'),
-         #    ('/rosout', 'rosout'),
-          #   ('/tf', 'tf'),
-           #  ('/tf_static', 'tf_static'),
-        #],
+        namespace=LaunchConfiguration('id'),
+        remappings=[
+            ('/cmd_vel', 'cmd_vel'),
+            ('/imu', 'imu'),
+            ('/limo_status', 'limo_status'),
+            ('/odom', 'odom'),
+            ('/parameter_events', 'parameter_events'),
+            ('/rosout', 'rosout'),
+            ('/tf', 'tf'),
+            ('/tf_static', 'tf_static'),
+        ],
         parameters=[{
                 # 'use_sim_time': launch.substitutions.LaunchConfiguration('use_sim_time'),
                 'port_name': launch.substitutions.LaunchConfiguration('port_name'),                
@@ -68,7 +65,6 @@ def generate_launch_description():
                 # 'simulated_robot': launch.substitutions.LaunchConfiguration('simulated_robot'),
                 'pub_odom_tf': launch.substitutions.LaunchConfiguration('pub_odom_tf'),
                 'control_rate': launch.substitutions.LaunchConfiguration('control_rate'),
-                'initial_yaw_offset': launch.substitutions.LaunchConfiguration('initial_yaw_offset'),
         }])
 
     return LaunchDescription([
@@ -82,6 +78,5 @@ def generate_launch_description():
         # is_omni_wheel_arg,
         # simulated_robot_arg,
         sim_control_rate_arg,
-        initial_yaw_offset_arg,
         limo_base_node
     ])
