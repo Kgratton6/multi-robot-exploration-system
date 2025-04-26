@@ -1,6 +1,6 @@
-# 🤖 Multi‑Robot Exploration System
+# Multi‑Robot Exploration System
 
-## Project Overview
+## 🤖 Project Overview
 
 This project, carried out for the INF3995 course at Polytechnique Montréal, aims to design a complete autonomous multi‑robot exploration system. Inspired by a space‑mission scenario, it simulates a terrain‑exploration mission with two AgileX Limo robots. The system is divided into three main parts:
 
