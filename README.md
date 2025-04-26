@@ -1,80 +1,82 @@
-# 🤖 Système d'exploration multi-robot
+# 🤖 Multi‑Robot Exploration System
 
-## Sommaire du projet
+## Project Overview
 
-Ce projet, réalisé dans le cadre du cours INF3995 à Polytechnique Montréal, vise à concevoir un système complet d'exploration autonome multi-robot. Inspiré d'un contexte spatial, il simule une mission d'exploration de terrain avec deux robots AgileX Limo. Le système est divisé en trois parties principales :
+This project, carried out for the INF3995 course at Polytechnique Montréal, aims to design a complete autonomous multi‑robot exploration system. Inspired by a space‑mission scenario, it simulates a terrain‑exploration mission with two AgileX Limo robots. The system is divided into three main parts:
 
-- **Robots physiques**: logiciel ROS 2 Humble
-- **Station au sol**: serveur NestJS, base de données MongoDB, interface Angular
-- **Simulation**: Gazebo Fortress pour tester sans les robots physiques
+- **Physical robots**: ROS 2 Humble software
+- **Ground station**: NestJS server, MongoDB database, Angular interface
+- **Simulation**: Gazebo Fortress to test without the physical robots
 
-L'opérateur interagit via une interface web unifiée pour démarrer, superviser et arrêter les missions. Toutes les composantes, sauf le code embarqué, sont conteneurisées avec Docker.
+The operator interacts through a unified web interface to start, supervise, and stop missions. All components, except the embedded code, are containerised with Docker.
 
-## 🌟 Fonctionnalités du robot
+## 🌟 Robot Features
 
-- Démarrage/arrêt de mission depuis l'interface web
-- Navigation autonome avec évitement d'obstacles
-- Cartographie 2D en temps réel visible sur l'interface
-- Sauvegarde des missions en base de données (MongoDB)
-- Communication directe inter-robots (P2P)
+- Start/stop missions from the web interface
+- Autonomous navigation with obstacle avoidance
+- Real‑time 2D mapping visible in the interface
+- Mission data saved in a MongoDB database
+- Direct inter‑robot communication (P2P)
 
-## 🗂️ Structure du projet
+## 🗂️ Project Structure
 
 ```
 .
-├── client/                     # Interface utilisateur Angular
-├── server/                     # Serveur NestJS
+├── client/                     # Angular user interface
+├── server/                     # NestJS server
 ├── robot/
-│   ├── common/                 # Fichiers partagés entre robots (son, images, ...)
-│   ├── gazebo/                 # Modèles et monde Gazebo
-│   ├── gazebo_launch_scripts/  # Scripts pour le lancement séparé de la simulation
-│   ├── limo/                   # Code spécifique au robot Limo
-│   ├── limo_launch_scripts/    # Scripts pour le lancement séparé des limos
-│   ├── robot/                  # Comportement embarqué des robots (navigation, communication, identification, ...)
-│   ├── robot_launch_scripts/   # Scripts pour le lancement séparé de comportement embarqué
-│   └── utilities/              # Scripts d'installation, débogage
-├── docker-compose.yml          # Lancement station avec Docker
-├── Dockerfile                  # Construction du conteneur
-├── start_base.sh               # Script de démarrage de la station au sol (Fronend, Backend)
-├── start_docker.sh             # Lance l'environnement complet avec Docker
-├── start_gazebo.sh             # Lance simulation Gazebo (Frontend, Backend, Gazebo)
-├── start_install.sh            # Installe dépendances nécéssaires
-├── START.md                    # Instructions d’utilisation (voir ci-dessous)
+│   ├── common/                 # Files shared between robots (sound, images, ...)
+│   ├── gazebo/                 # Gazebo models and world
+│   ├── gazebo_launch_scripts/  # Scripts to launch the simulation separately
+│   ├── limo/                   # Limo‑specific robot code
+│   ├── limo_launch_scripts/    # Scripts to launch the limos separately
+│   ├── robot/                  # On‑board robot behaviour (navigation, communication, identification, ...)
+│   ├── robot_launch_scripts/   # Scripts to launch on‑board behaviour separately
+│   └── utilities/              # Installation and debugging scripts
+├── docker-compose.yml          # Ground station launch with Docker
+├── Dockerfile                  # Container build
+├── start_base.sh               # Ground‑station start script (Frontend, Backend)
+├── start_docker.sh             # Launches the complete environment with Docker
+├── start_gazebo.sh             # Launches Gazebo simulation (Frontend, Backend, Gazebo)
+├── start_install.sh            # Installs required dependencies
+├── START.md                    # Usage instructions (see below)
 ```
 
-## 📸 Images du projet
+## 📸 Project Images
 
-### Interface Web
+### Web Interface
 ![frontend](robot/common/readme_img_front.png)
 
-### Gérération de map
+### Map Generation
 ![map](robot/common/readme_img_map.png)
 
-### Base de donnée
-![databse](robot/common/readme_img_database.png)
+### Database
+![database](robot/common/readme_img_database.png)
 
-### Simulation Gazebo
+### Gazebo Simulation
 ![Gazebo](robot/common/readme_img_gazebo.png)
 
-## ⚙️ Installation et exécution
-Veuillez consulter le fichier `START.md` à la racine du projet. Celui-ci contient :
+## ⚙️ Installation and Execution
 
-- Prérequis pour Ubuntu 22.04 (ou WSL2)
-- Commandes pour lancer le projet avec `docker-compose`
-- Instructions pour un lancement local (hors Docker)
-- Détails pour lancer la simulation Gazebo avec ou sans robots
+Please refer to the `START.md` file at the root of the project. It contains:
 
-Lien rapide : [START.md](./START.md)
+- Prerequisites for Ubuntu 22.04 (or WSL2)
+- Commands to launch the project with `docker-compose`
+- Instructions for a local launch (outside Docker)
+- Details to run the Gazebo simulation with or without robots
 
-## 👥 Équipe 102
+Quick link: [START.md](./START.md)
+
+## 👥 Team 102
 Zerouali, Amine  
-Gratton Fournier, Kevin Santiago  
+Gratton Fournier, Kevin Santiago  
 Haddadi, Issam  
-Hachemi Boumila, Rafik  
-Abassi, Yassine Mohamed Taha  
-Milord, Mario Junior
-   
-## 🛠️ Technologies utilisés
+Hachemi Boumila, Rafik  
+Abassi, Yassine Mohamed Taha  
+Milord, Mario Junior
+
+## 🛠️ Technologies Used
+
 
 <img  align="left" width="50" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/gitlab.png" alt="Ros 2" title="Ros 2"/>
 <img  align="left" width="50" src="https://user-images.githubusercontent.com/25181517/183890595-779a7e64-3f43-4634-bad2-eceef4e80268.png" alt="Angular" title="Angular"/>
